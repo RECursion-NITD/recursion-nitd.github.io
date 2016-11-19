@@ -162,7 +162,7 @@ Stretchy Nav style - common to:
   display: block;
   height: 50px;
   line-height: 50px;
-  padding: 0 calc(1em + 60px) 0 1em;
+  padding: 0 calc(60px) 0 1em;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
   -webkit-transition: color 0.2s;
@@ -177,8 +177,7 @@ Stretchy Nav style - common to:
   -ms-transform: translateY(-50%) scale(0);
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
-  /*opacity of the nav text*/
-  opacity: 0.8;
+  opacity: .6;
 }
 .cd-stretchy-nav ul a::before {
   /* line visible next to the active navigation item */
@@ -338,13 +337,14 @@ add-content navigation style
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #8ac57f;
+  background-color: #8c8181;
   -webkit-transition: width 0.5s, box-shadow 0.5s;
   -moz-transition: width 0.5s, box-shadow 0.5s;
   transition: width 0.5s, box-shadow 0.5s;
 }
 .cd-stretchy-nav.add-content.nav-is-visible .stretchy-nav-bg {
   width: 100%;
+  height:60px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -356,7 +356,7 @@ add-content navigation style
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #9acd91;
+  background-color: #586b69;
 }
 .cd-stretchy-nav.add-content .cd-nav-trigger span {
   background-color: transparent;
@@ -398,19 +398,20 @@ add-content navigation style
 
 .cd-stretchy-nav.add-content ul {
   padding-top: 0;
+
 }
 .cd-stretchy-nav.add-content ul::after {
   clear: both;
+  padding-top: 0;
+  padding-bottom: 0;
   content: "";
   display: table;
 }
-/*size for each tab of the navbar*/
 .cd-stretchy-nav.add-content ul li {
   display: inline-block;
   float: left;
   width: 140px;
 }
-/*an extra space for the trigger*/
 .cd-stretchy-nav.add-content ul li:nth-of-type(3) {
   /* space occupied by the navigation trigger */
   margin-right: 60px;
@@ -430,8 +431,6 @@ add-content navigation style
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
 }
-
-/*this part is for the content of the navigation bar*/
 .cd-stretchy-nav.add-content ul li:first-of-type a::after {
   content: 'About Us'
 }
@@ -463,21 +462,21 @@ add-content navigation style
 }
 .cd-stretchy-nav.add-content ul li:first-of-type a::after,
 .cd-stretchy-nav.add-content ul li:nth-of-type(6) a::after {
-  -webkit-animation-delay: 0.75s;
-  -moz-animation-delay: 0.75s;
-  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after,
 .cd-stretchy-nav.add-content ul li:nth-of-type(5) a::after {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after,
 .cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .cd-stretchy-nav.add-content.nav-is-visible ul a::after {
@@ -551,6 +550,201 @@ add-content navigation style
   transform: translateX(0);
 }
 
+/* -------------------------------- 
+
+edit content
+
+-------------------------------- */
+.cd-editable-content {
+  /* used to wrap the image and the navigation */
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 4em auto;
+}
+.cd-editable-content img {
+  display: block;
+  border-radius: .25em;
+}
+
+.cd-stretchy-nav.edit-content {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.cd-stretchy-nav.edit-content .stretchy-nav-bg {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+  -webkit-transition: background 0.2s, height 0.2s;
+  -moz-transition: background 0.2s, height 0.2s;
+  transition: background 0.2s, height 0.2s;
+}
+.cd-stretchy-nav.edit-content.nav-is-visible .stretchy-nav-bg {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* reset default style */
+  box-shadow: none;
+}
+
+.cd-stretchy-nav.edit-content .cd-nav-trigger {
+  height: 30px;
+  width: 30px;
+}
+.cd-stretchy-nav.edit-content .cd-nav-trigger span {
+  opacity: 0;
+  background-color: transparent;
+}
+.cd-stretchy-nav.edit-content .cd-nav-trigger span::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.cd-stretchy-nav.edit-content .cd-nav-trigger span::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger span::before, .cd-stretchy-nav.edit-content .cd-nav-trigger span::after {
+  /* used to create the 'X' icon when the navigation is open */
+  width: 12px;
+}
+.cd-stretchy-nav.edit-content .cd-nav-trigger::after {
+  /* edit icon */
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/cd-sprite-3.svg) no-repeat 0 0;
+}
+.cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger::after {
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.no-touch .cd-stretchy-nav.edit-content .cd-nav-trigger:hover ~ .stretchy-nav-bg {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span {
+  opacity: 1;
+}
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger::after {
+  /* hide edit icon */
+  opacity: 0;
+}
+
+.cd-stretchy-nav.edit-content ul {
+  padding-top: 30px;
+}
+
+.cd-stretchy-nav.edit-content ul a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+.cd-stretchy-nav.edit-content ul a::after {
+  right: 7px;
+  background-image: url(../img/cd-sprite-3.svg);
+}
+
+.cd-stretchy-nav.edit-content ul li:first-of-type a::after {
+  background-position: -16px 0;
+}
+
+.cd-stretchy-nav.edit-content ul li:nth-of-type(2) a::after {
+  background-position: -32px 0;
+}
+
+.cd-stretchy-nav.edit-content ul li:nth-of-type(3) a::after {
+  background-position: -48px 0;
+}
+
+.cd-stretchy-nav.edit-content ul li:nth-of-type(4) a::after {
+  background-position: -64px 0;
+}
+
+.cd-stretchy-nav.edit-content ul span {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 1em;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 2px;
+  text-align: center;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  -moz-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.cd-stretchy-nav.edit-content ul span::after {
+  /* triangle below the tooltip */
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 0;
+  width: 0;
+  border: 4px solid transparent;
+  border-left-color: rgba(0, 0, 0, 0.55);
+}
+
+.cd-stretchy-nav.edit-content.nav-is-visible ul span {
+  /* reset default style */
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+.no-touch .cd-stretchy-nav.edit-content.nav-is-visible ul a:hover span {
+  opacity: 1;
+  visibility: visible;
+  /* reset default style */
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
 
 /* -------------------------------- 
 
