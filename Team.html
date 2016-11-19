@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Fullscreen Pageflip Layout with BookBlock</title>
 		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
 		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
@@ -14,20 +16,41 @@
 		<leink rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="js/modernizr.custom.js"></script>
-
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	</head>
 <body style="overflow: visible;">
+
 <style>
 .carousel-inner > .item > img{
        width:1340px;
        height:560px;
      }
 </style>
+<header>
+	<nav class="cd-stretchy-nav add-content">
+		<a class="cd-nav-trigger" href="#0">
+			<span aria-hidden="true"></span>
+		</a>
 
+		<ul>
+			<li><a href="#About"><span>edit here</span></a></li>
+			<li><a href="#0"><span>edit here</span></a></li>
+			<li><a href="#Team"><span>edit here</span></a></li>
+			<li><a href="#0"><span>edit here</span></a></li>
+			<li><a href="#0"><span>edit here</span></a></li>
+			<li><a href="#0"><span>edit here</span></a></li>
+		</ul>
+
+		<span aria-hidden="true" class="stretchy-nav-bg"></span>
+	</nav>
+</header>
 <!-- About Us page code -->
-
+<segment id="About">
 <div class="container-fluid" style="background-color: #ecf0f1">
 	<a id="aboutUs" class="smooth"></a>
 	<h2 align=center> About Us </h2>
@@ -77,11 +100,13 @@
     </a>
   </div>
 </div>
-
+</segment>
+<segment id="Team">
 <div class="container-fluid" style="background-color: #ecf0f1">
 	<a id="team" class="smooth"></a>
 	<h2 align=center>The Team</h2>
 </div>
+</segment>
 
 <!-- Team page code -->
 	<div id="pt-main" class="pt-perspective">
@@ -602,6 +627,8 @@
 		<script src="js/jquery.dlmenu.js"></script>
 		<script src="js/pagetransitions.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 
 </body>
 </html>
