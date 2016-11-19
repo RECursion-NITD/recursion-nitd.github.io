@@ -14,8 +14,7 @@
 		<leink rel="stylesheet" type="text/css" href="css/multilevelmenu.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/animations.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="js/modernizr.custom.js"></script>
 
 	</head>
@@ -27,8 +26,22 @@
      }
 </style>
 
+<div class="navbar navbar-default" id="mera">
+<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+ <ul class="nav navbar-nav">
+  <li><a href="#aboutUs">About Us</a></li>
+  <li><a href="#team">Team</a></li>
+ <ul>
+</div>
+</div>
+
+
+
+
 <!-- About Us page code -->
+
 <div class="container-fluid" style="background-color: #ecf0f1">
+	<a id="aboutUs" class="smooth"></a>
 	<h2 align=center> About Us </h2>
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
@@ -78,6 +91,7 @@
 </div>
 
 <div class="container-fluid" style="background-color: #ecf0f1">
+	<a id="team" class="smooth"></a>
 	<h2 align=center>The Team</h2>
 </div>
 
@@ -544,7 +558,7 @@
 
 									<div class="pull-right">
 									<div class="pt-triggers">
-											<div id="iterateEffects"><span id="nextB" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+											<div id="iterateEffects"><span id="nextB" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></div>
 										</div><!-- /triggers -->
 									</div>
 
@@ -587,6 +601,17 @@
 	</div>
 
 </footer>
+
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+
+    return false;
+});
+</script>
 
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
