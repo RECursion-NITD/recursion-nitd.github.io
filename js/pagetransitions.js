@@ -20,7 +20,7 @@ var PageTransitions = (function() {
 		// support css animations
 		support = Modernizr.cssanimations,
         animations = {
-            max: 4
+            max: 1
         },
         keys = {
             BACKSPACE: 8,
@@ -86,7 +86,7 @@ var PageTransitions = (function() {
 
 	function nextPage(options ) {
 		var animation = (options.animation) ? options.animation : options;
-		console.log("Value of Animation: "+animation);
+
 		if( isAnimating ) {
 			return false;
 		}
@@ -115,24 +115,12 @@ var PageTransitions = (function() {
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 			outClass = '', inClass = '';
 
-		switch( animation ) {	
+		switch( animation ) {
 			case 1:
-				outClass = 'pt-page-rotateCubeLeftOut pt-page-ontop';
-				inClass = 'pt-page-rotateCubeLeftIn';
+				outClass = 'pt-page-rotateRoomRightOut pt-page-ontop';
+				inClass = 'pt-page-rotateRoomRightIn';
 				break;
-			case 2:
-				outClass = 'pt-page-rotateCubeRightOut pt-page-ontop';
-				inClass = 'pt-page-rotateCubeRightIn';
-				break;
-			case 3:
-				outClass = 'pt-page-rotateCubeTopOut pt-page-ontop';
-				inClass = 'pt-page-rotateCubeTopIn';
-				break;
-			case 4:
-				outClass = 'pt-page-rotateCubeBottomOut pt-page-ontop';
-				inClass = 'pt-page-rotateCubeBottomIn';
-				break;
-	
+
 		}
 
 		$currPage.addClass( outClass ).on( animEndEventName, function() {
