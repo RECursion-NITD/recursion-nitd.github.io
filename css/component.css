@@ -3,6 +3,8 @@ html, body { height: 100%; }
 #nextB{
 	position: absolute;
 	font-size: 60px;
+	align-self: center;
+	padding-top: 30px;
 }
 
 .pt-perspective {
