@@ -16,7 +16,7 @@
 #intro, #work, #team {padding-top: 4rem;}
 
 
-#index-banner {
+#index-banner, #about, #getstarted {
     min-height: 632px;
     max-height: 864px;
     position: relative;
@@ -24,7 +24,7 @@
 }
 
 #nav_f{
-    box-shadow: none !important; 
+    box-shadow: none !important;
     -webkit-box-shadow:none !important;
 }
 
