@@ -1,836 +1,265 @@
-/* -------------------------------- 
+/* Custom Stylesheet */
+/**
+ *
+ * Made By Joash Pereira
+ * Thanks for MaterializeCSS.com
+ */
 
-Primary style
+.default_color{background-color: #2196F3 !important}
 
--------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
+.default_color_text{color: #2196F3 !important}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #003c5d;
-  background-color: #ffffff;
+.icon-block {
+    padding: 0 15px;
 }
 
-a {
-  color: #9acd91;
-  text-decoration: none;
+#intro, #work, #team {padding-top: 4rem;}
+
+
+#index-banner {
+    min-height: 632px;
+    max-height: 864px;
+    position: relative;
+    background-color: #2196F3;
 }
 
-img {
-  max-width: 100%;
+#nav_f{
+    box-shadow: none !important; 
+    -webkit-box-shadow:none !important;
 }
 
-/* -------------------------------- 
-
-Stretchy Nav style - common to:
- - basic navigation
- - add-content navigation
- - edit-content navigation
-
--------------------------------- */
-.cd-stretchy-nav {
-  position: fixed;
-  z-index: 2;
-  top: 40px;
-  right: 5%;
-  pointer-events: none;
-}
-.cd-stretchy-nav .stretchy-nav-bg {
-  /* this is the stretching navigation background */
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  background: #9acd91;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-transition: height 0.2s, box-shadow 0.2s;
-  -moz-transition: height 0.2s, box-shadow 0.2s;
-  transition: height 0.2s, box-shadow 0.2s;
-}
-.cd-stretchy-nav.nav-is-visible {
-  pointer-events: auto;
-}
-.cd-stretchy-nav.nav-is-visible .stretchy-nav-bg {
-  height: 100%;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+.text_h {
+    padding: 15% 0;
+    font-size: 6.0em;
+    font-weight: 100;
+    color:white;
 }
 
-.cd-nav-trigger {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  /* replace text with image */
-  overflow: hidden;
-  white-space: nowrap;
-  color: transparent;
-  pointer-events: auto;
-}
-.cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
-  /* this is the hamburger icon */
-  position: absolute;
-  width: 16px;
-  height: 2px;
-  background-color: #ffffff;
-}
-.cd-nav-trigger span {
-  /* middle line of the hamburger icon */
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -webkit-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-.cd-nav-trigger span::after, .cd-nav-trigger span::before {
-  /* top and bottom lines of the hamburger icon */
-  content: '';
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
-  transition: transform 0.2s;
-}
-.cd-nav-trigger span::before {
-  -webkit-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  -o-transform: translateY(-6px);
-  transform: translateY(-6px);
-}
-.cd-nav-trigger span::after {
-  -webkit-transform: translateY(6px);
-  -moz-transform: translateY(6px);
-  -ms-transform: translateY(6px);
-  -o-transform: translateY(6px);
-  transform: translateY(6px);
-}
-.no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
-}
-.nav-is-visible .cd-nav-trigger span {
-  background-color: transparent;
-}
-.nav-is-visible .cd-nav-trigger span::before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.nav-is-visible .cd-nav-trigger span::after {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+.brand-logo{
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 100;
+    padding: 0;
+    letter-spacing: 7px;
 }
 
-.cd-stretchy-nav ul {
-  position: relative;
-  z-index: 2;
-  padding: 60px 0 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0.3s;
-  -moz-transition: visibility 0.3s;
-  transition: visibility 0.3s;
-  text-align: right;
+.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+
+.span_h2 {font-weight: 300;color: #2196F3;}
+
+.text_b{color: #2196F3;}
+
+.in{font-weight: 400 !important; font-style: normal !important;}
+
+.promo i {
+    color: #2196F3;
+    font-size: 7rem;
+    display: block;
 }
-.cd-stretchy-nav ul a {
-  position: relative;
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 calc(60px) 0 1em;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.4rem;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  transition: color 0.2s;
-}
-.cd-stretchy-nav ul a::after {
-  /* navigation item icons */
-  position: absolute;
-  -webkit-transform: translateY(-50%) scale(0);
-  -moz-transform: translateY(-50%) scale(0);
-  -ms-transform: translateY(-50%) scale(0);
-  -o-transform: translateY(-50%) scale(0);
-  transform: translateY(-50%) scale(0);
-  opacity: .6;
-}
-.cd-stretchy-nav ul a::before {
-  /* line visible next to the active navigation item */
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 16px;
-  top: 50%;
-  right: 60px;
-  -webkit-transform: translateX(3px) translateY(-50%) scaleY(0);
-  -moz-transform: translateX(3px) translateY(-50%) scaleY(0);
-  -ms-transform: translateX(3px) translateY(-50%) scaleY(0);
-  -o-transform: translateX(3px) translateY(-50%) scaleY(0);
-  transform: translateX(3px) translateY(-50%) scaleY(0);
-  background-color: #0a9581;
-}
-.cd-stretchy-nav ul li:first-of-type a::after {
-  /* change custom icon using image sprites */
-  background-position: -32px 0;
-}
-.cd-stretchy-nav ul li:nth-of-type(2) a::after {
-  background-position: -64px 0;
-}
-.cd-stretchy-nav ul li:nth-of-type(3) a::after {
-  background-position: -48px 0;
-}
-.cd-stretchy-nav ul li:nth-of-type(4) a::after {
-  background-position: 0 0;
-}
-.cd-stretchy-nav ul li:nth-of-type(5) a::after {
-  background-position: -16px 0;
-}
-.cd-stretchy-nav ul span {
-  /* navigation item labels */
-  display: block;
-  opacity: 0;
-  -webkit-transform: translateX(-25px);
-  -moz-transform: translateX(-25px);
-  -ms-transform: translateX(-25px);
-  -o-transform: translateX(-25px);
-  transform: translateX(-25px);
+.card-content a {color: #2196F3;}
+
+.card-content a:hover {color: #2196F3;}
+
+#work, #team{background: rgb(247, 247, 247);}
+
+.text_pink{color:#EF9A9A;}
+
+nav ul a {
+    font-size: 1.2rem;
+    color: #FFF;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: 300;
+    padding: 0px 15px;
 }
 
-.cd-stretchy-nav.nav-is-visible ul {
-  visibility: visible;
-}
-.cd-stretchy-nav.nav-is-visible ul a::after {
-  /* navigation item icons */
-  -webkit-transform: translateY(-50%) scale(1);
-  -moz-transform: translateY(-50%) scale(1);
-  -ms-transform: translateY(-50%) scale(1);
-  -o-transform: translateY(-50%) scale(1);
-  transform: translateY(-50%) scale(1);
-  -webkit-animation: scaleIn 0.15s backwards;
-  -moz-animation: scaleIn 0.15s backwards;
-  animation: scaleIn 0.15s backwards;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-.cd-stretchy-nav.nav-is-visible ul a.active {
-  color: #ffffff;
-}
-.cd-stretchy-nav.nav-is-visible ul a.active::after {
-  opacity: 1;
-}
-.cd-stretchy-nav.nav-is-visible ul a.active::before {
-  -webkit-transform: translateX(3px) translateY(-50%) scaleY(1);
-  -moz-transform: translateX(3px) translateY(-50%) scaleY(1);
-  -ms-transform: translateX(3px) translateY(-50%) scaleY(1);
-  -o-transform: translateX(3px) translateY(-50%) scaleY(1);
-  transform: translateX(3px) translateY(-50%) scaleY(1);
-  -webkit-transition: -webkit-transform 0.15s 0.3s;
-  -moz-transition: -moz-transform 0.15s 0.3s;
-  transition: transform 0.15s 0.3s;
-}
-.cd-stretchy-nav.nav-is-visible ul span {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-animation: slideIn 0.15s backwards;
-  -moz-animation: slideIn 0.15s backwards;
-  animation: slideIn 0.15s backwards;
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
-  transition: transform 0.2s;
-}
-.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover {
-  color: #ffffff;
-}
-.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover::after {
-  opacity: 1;
-}
-.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover span {
-  -webkit-transform: translateX(-5px);
-  -moz-transform: translateX(-5px);
-  -ms-transform: translateX(-5px);
-  -o-transform: translateX(-5px);
-  transform: translateX(-5px);
-}
-.cd-stretchy-nav.nav-is-visible ul li:first-of-type a::after,
-.cd-stretchy-nav.nav-is-visible ul li:first-of-type span {
-  -webkit-animation-delay: 0.05s;
-  -moz-animation-delay: 0.05s;
-  animation-delay: 0.05s;
-}
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) a::after,
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) span {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) a::after,
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) span {
-  -webkit-animation-delay: 0.15s;
-  -moz-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(4) a::after,
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(4) span {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(5) a::after,
-.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(5) span {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+.cd-headline.type .cd-words-wrapper {
+    vertical-align: top;
+    overflow: hidden;
 }
 
-/* -------------------------------- 
-
-add-content navigation style
-
--------------------------------- */
-.cd-stretchy-nav.add-content {
-  bottom: auto;
-  top: 50px;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 900px;
-}
-.cd-stretchy-nav.add-content .stretchy-nav-bg {
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #8c8181;
-  -webkit-transition: width 0.5s, box-shadow 0.5s;
-  -moz-transition: width 0.5s, box-shadow 0.5s;
-  transition: width 0.5s, box-shadow 0.5s;
-}
-.cd-stretchy-nav.add-content.nav-is-visible .stretchy-nav-bg {
-  width: 100%;
-  height:60px;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+.cd-headline.type .cd-words-wrapper::after {
+    /* vertical bar */
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 90%;
+    width: 1px;
+    background-color: #aebcb9;
 }
 
-.cd-stretchy-nav.add-content .cd-nav-trigger {
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background-color: #586b69;
+.cd-headline.type .cd-words-wrapper.waiting::after {
+    -webkit-animation: cd-pulse 1s infinite;
+    -moz-animation: cd-pulse 1s infinite;
+    animation: cd-pulse 1s infinite;
 }
-.cd-stretchy-nav.add-content .cd-nav-trigger span {
-  background-color: transparent;
-}
-.cd-stretchy-nav.add-content .cd-nav-trigger span::before {
-  /* used to create the plus icon */
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.cd-stretchy-nav.add-content .cd-nav-trigger span::after {
-  /* used to create the plus icon */
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+.cd-headline.type .cd-words-wrapper.selected {
+    background-color: #FFF;
 }
 
-.cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-}
-.cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger span::before {
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-.cd-stretchy-nav.add-content.nav-is-visible .cd-nav-trigger span::after {
-  -webkit-transform: rotate(-225deg);
-  -moz-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  -o-transform: rotate(-225deg);
-  transform: rotate(-225deg);
+.cd-headline.type .cd-words-wrapper.selected::after {
+    visibility: hidden;
 }
 
-.cd-stretchy-nav.add-content ul {
-  padding-top: 0;
-
-}
-.cd-stretchy-nav.add-content ul::after {
-  clear: both;
-  padding-top: 0;
-  padding-bottom: 0;
-  content: "";
-  display: table;
-}
-.cd-stretchy-nav.add-content ul li {
-  display: inline-block;
-  float: left;
-  width: 140px;
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(3) {
-  /* space occupied by the navigation trigger */
-  margin-right: 60px;
-}
-.cd-stretchy-nav.add-content ul a {
-  padding: 0;
-  height: 60px;
-  width: 100%;
-}
-.cd-stretchy-nav.add-content ul a::after {
-  top: 50%;
-  left: 22px;
-  right: auto;
-  -webkit-transform: translateY(-50%) scale(0);
-  -moz-transform: translateY(-50%) scale(0);
-  -ms-transform: translateY(-50%) scale(0);
-  -o-transform: translateY(-50%) scale(0);
-  transform: translateY(-50%) scale(0);
-}
-.cd-stretchy-nav.add-content ul li:first-of-type a::after {
-  content: 'About Us'
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after {
-  content:'Getting Started';
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after {
-  content:'Our Team';
-}.cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after {
-  content:'Our Aim';
-}.cd-stretchy-nav.add-content ul li:nth-of-type(5) a::after {
-  content:'Competitions';
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(6) a::after {
-  content:'Contact Us';
+.cd-headline.type .cd-words-wrapper.selected b {
+    color: #2196F3;
 }
 
-.cd-stretchy-nav.add-content ul li:first-of-type a::after {
-  background-position: -16px 0px;
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after {
-  background-position: 0px 0px;
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after {
-  background-position: -48px 0px;
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after {
-  background-position: -32px 0px;
-}
-.cd-stretchy-nav.add-content ul li:first-of-type a::after,
-.cd-stretchy-nav.add-content ul li:nth-of-type(6) a::after {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(2) a::after,
-.cd-stretchy-nav.add-content ul li:nth-of-type(5) a::after {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-.cd-stretchy-nav.add-content ul li:nth-of-type(3) a::after,
-.cd-stretchy-nav.add-content ul li:nth-of-type(4) a::after {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
+.cd-headline.type b {
+    visibility: hidden;
 }
 
-.cd-stretchy-nav.add-content.nav-is-visible ul a::after {
-  -webkit-animation-name: scaleIn;
-  -moz-animation-name: scaleIn;
-  animation-name: scaleIn;
-  -webkit-transform: translateY(-50%) scale(1);
-  -moz-transform: translateY(-50%) scale(1);
-  -ms-transform: translateY(-50%) scale(1);
-  -o-transform: translateY(-50%) scale(1);
-  transform: translateY(-50%) scale(1);
+.cd-headline.type b.is-visible {
+    visibility: visible;
 }
 
-.cd-stretchy-nav.add-content ul span {
-  position: absolute;
-  left: 0;
-  top: -20px;
-  width: 100%;
-  padding: 0.6em 0;
-  opacity: 0;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 2px;
-  font-size: 1.2rem;
-  line-height: 1;
-  white-space: nowrap;
-  text-align: center;
-  -webkit-transition: opacity 0.2s, visibility 0.2s;
-  -moz-transition: opacity 0.2s, visibility 0.2s;
-  transition: opacity 0.2s, visibility 0.2s;
-  /* reset default style */
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
+.cd-headline.type i {
+    position: absolute;
+    visibility: hidden;
 }
-.cd-stretchy-nav.add-content ul span::after {
-  /* triangle below the tooltip */
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  right: auto;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  height: 0;
-  width: 0;
-  border: 4px solid transparent;
-  border-top-color: rgba(0, 0, 0, 0.8);
+.cd-headline.type i.in {
+    position: relative;
+    visibility: visible;
 }
 
-.cd-stretchy-nav.add-content.nav-is-visible ul span {
-  /* reset default style */
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
+@-webkit-keyframes cd-pulse {
+    0% {
+        -webkit-transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
+}
+@-moz-keyframes cd-pulse {
+    0% {
+        -moz-transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    40% {
+        -moz-transform: translateY(-50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
 }
 
-.no-touch .cd-stretchy-nav.add-content.nav-is-visible ul a:hover span {
-  opacity: 1;
-  visibility: visible;
-  /* reset default style */
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
+@keyframes cd-pulse {
+    0% {
+        -webkit-transform: translateY(-50%) scale(1);
+        -moz-transform: translateY(-50%) scale(1);
+        -ms-transform: translateY(-50%) scale(1);
+        -o-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-50%) scale(0.9);
+        -moz-transform: translateY(-50%) scale(0.9);
+        -ms-transform: translateY(-50%) scale(0.9);
+        -o-transform: translateY(-50%) scale(0.9);
+        transform: translateY(-50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-50%) scale(0);
+        -moz-transform: translateY(-50%) scale(0);
+        -ms-transform: translateY(-50%) scale(0);
+        -o-transform: translateY(-50%) scale(0);
+        transform: translateY(-50%) scale(0);
+        opacity: 0;
+    }
 }
 
-/* -------------------------------- 
 
-edit content
-
--------------------------------- */
-.cd-editable-content {
-  /* used to wrap the image and the navigation */
-  position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: 4em auto;
-}
-.cd-editable-content img {
-  display: block;
-  border-radius: .25em;
+/* Preloader */
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:1200; /* makes sure it stays on top */
 }
 
-.cd-stretchy-nav.edit-content {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.cd-stretchy-nav.edit-content .stretchy-nav-bg {
-  height: 30px;
-  width: 30px;
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: none;
-  -webkit-transition: background 0.2s, height 0.2s;
-  -moz-transition: background 0.2s, height 0.2s;
-  transition: background 0.2s, height 0.2s;
-}
-.cd-stretchy-nav.edit-content.nav-is-visible .stretchy-nav-bg {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  /* reset default style */
-  box-shadow: none;
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
-.cd-stretchy-nav.edit-content .cd-nav-trigger {
-  height: 30px;
-  width: 30px;
-}
-.cd-stretchy-nav.edit-content .cd-nav-trigger span {
-  opacity: 0;
-  background-color: transparent;
-}
-.cd-stretchy-nav.edit-content .cd-nav-trigger span::before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.cd-stretchy-nav.edit-content .cd-nav-trigger span::after {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger span::before, .cd-stretchy-nav.edit-content .cd-nav-trigger span::after {
-  /* used to create the 'X' icon when the navigation is open */
-  width: 12px;
-}
-.cd-stretchy-nav.edit-content .cd-nav-trigger::after {
-  /* edit icon */
-  content: '';
-  position: absolute;
-  height: 16px;
-  width: 16px;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(../img/cd-sprite-3.svg) no-repeat 0 0;
-}
-.cd-stretchy-nav.edit-content .cd-nav-trigger span, .cd-stretchy-nav.edit-content .cd-nav-trigger::after {
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-.no-touch .cd-stretchy-nav.edit-content .cd-nav-trigger:hover ~ .stretchy-nav-bg {
-  box-shadow: none;
-  background-color: rgba(0, 0, 0, 0.8);
+@media only screen and (max-width: 480px) {
+    .text_h {
+        padding: 4% 0;
+        font-size: 5em;
+        font-weight: 100;
+        color: white;
+    }
 }
 
-.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span {
-  opacity: 1;
-}
-.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger span::after {
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+input, textarea {
+    border-bottom: 1px solid #fff;
 }
 
-.cd-stretchy-nav.edit-content.nav-is-visible .cd-nav-trigger::after {
-  /* hide edit icon */
-  opacity: 0;
+nav a.button-collapse {
+    left: -25px;
 }
 
-.cd-stretchy-nav.edit-content ul {
-  padding-top: 30px;
+.card-avatar .waves-effect {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.cd-stretchy-nav.edit-content ul a {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  padding: 0;
-}
-.cd-stretchy-nav.edit-content ul a::after {
-  right: 7px;
-  background-image: url(../img/cd-sprite-3.svg);
+.card-avatar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
 }
 
-.cd-stretchy-nav.edit-content ul li:first-of-type a::after {
-  background-position: -16px 0;
+.card-avatar .card-content {
+    text-align: center;
 }
 
-.cd-stretchy-nav.edit-content ul li:nth-of-type(2) a::after {
-  background-position: -32px 0;
+.card .card-content p {
+    margin: 15px 0px;
 }
 
-.cd-stretchy-nav.edit-content ul li:nth-of-type(3) a::after {
-  background-position: -48px 0;
+.card-avatar .card-content i {
+   font-size: 1.5rem;
 }
 
-.cd-stretchy-nav.edit-content ul li:nth-of-type(4) a::after {
-  background-position: -64px 0;
+.card-avatar .card-content .card-title {
+    line-height: 30px !important;
 }
 
-.cd-stretchy-nav.edit-content ul span {
-  position: absolute;
-  top: 0;
-  right: 35px;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 1em;
-  opacity: 0;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 2px;
-  text-align: center;
-  -webkit-transition: opacity 0.2s, visibility 0.2s;
-  -moz-transition: opacity 0.2s, visibility 0.2s;
-  transition: opacity 0.2s, visibility 0.2s;
-}
-.cd-stretchy-nav.edit-content ul span::after {
-  /* triangle below the tooltip */
-  content: '';
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  bottom: auto;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 0;
-  width: 0;
-  border: 4px solid transparent;
-  border-left-color: rgba(0, 0, 0, 0.55);
+.parallax-container {
+    max-height: 400px;
 }
 
-.cd-stretchy-nav.edit-content.nav-is-visible ul span {
-  /* reset default style */
-  -webkit-animation: none;
-  -moz-animation: none;
-  animation: none;
-}
-.no-touch .cd-stretchy-nav.edit-content.nav-is-visible ul a:hover span {
-  opacity: 1;
-  visibility: visible;
-  /* reset default style */
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateX(0);
-}
-
-/* -------------------------------- 
-
-main content basic style
-
--------------------------------- */
-.cd-main-content {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  padding: 100px 0;
-  background-color: #003c5d;
-}
-
-/* -------------------------------- 
-
-keyframes
-
--------------------------------- */
-@-webkit-keyframes scaleIn {
-  from {
-    -webkit-transform: translateY(-50%) scale(0);
-  }
-  to {
-    -webkit-transform: translateY(-50%) scale(1);
-  }
-}
-@-moz-keyframes scaleIn {
-  from {
-    -moz-transform: translateY(-50%) scale(0);
-  }
-  to {
-    -moz-transform: translateY(-50%) scale(1);
-  }
-}
-@keyframes scaleIn {
-  from {
-    -webkit-transform: translateY(-50%) scale(0);
-    -moz-transform: translateY(-50%) scale(0);
-    -ms-transform: translateY(-50%) scale(0);
-    -o-transform: translateY(-50%) scale(0);
-    transform: translateY(-50%) scale(0);
-  }
-  to {
-    -webkit-transform: translateY(-50%) scale(1);
-    -moz-transform: translateY(-50%) scale(1);
-    -ms-transform: translateY(-50%) scale(1);
-    -o-transform: translateY(-50%) scale(1);
-    transform: translateY(-50%) scale(1);
-  }
-}
-@-webkit-keyframes slideIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-25px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-}
-@-moz-keyframes slideIn {
-  from {
-    opacity: 0;
-    -moz-transform: translateX(-25px);
-  }
-  to {
-    opacity: 1;
-    -moz-transform: translateX(0);
-  }
-}
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-25px);
-    -moz-transform: translateX(-25px);
-    -ms-transform: translateX(-25px);
-    -o-transform: translateX(-25px);
-    transform: translateX(-25px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
+footer.page-footer {
+    margin-top: 0px !important;
 }
