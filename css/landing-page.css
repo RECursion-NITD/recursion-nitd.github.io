@@ -22,7 +22,7 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -35,20 +35,23 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/7.jpg) no-repeat center center;
+    background: url(../img/13.jpg) no-repeat center center;
+    opacity: 0.7;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
 }
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+    font-size: 10em;
+    color: #00B2AE;
+    letter-spacing: 10px;
 }
 
 .intro-divider {
@@ -58,7 +61,8 @@ h6 {
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 7px 7px 7px rgba(0,0,0,0.6);
+    color: #f4511e;
 }
 
 @media(max-width:767px) {
