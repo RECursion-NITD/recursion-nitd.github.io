@@ -16,7 +16,7 @@
 #intro, #work, #team {padding-top: 4rem;}
 
 
-#index-banner, #about, #getstarted {
+#index-banner, #about, #getstarted, #event {
     min-height: 632px;
     max-height: 864px;
     position: relative;
