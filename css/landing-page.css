@@ -50,15 +50,18 @@ h6 {
     margin: 0;
     text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
     font-size: 10em;
-    color: #00B2AE;
+    color: #80cbc4;
     letter-spacing: 10px;
 }
 
 .intro-divider {
-    width: 400px;
+    width: 500px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+
+
 
 .intro-message > h3 {
     text-shadow: 7px 7px 7px rgba(0,0,0,0.6);
