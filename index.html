@@ -28,13 +28,21 @@
 .nav-wrapper li a {text-decoration: none;}
 .nav-wrapper li .active{background-color: #4fc3f7;}
 
-#myLP.go {
-    height: 0%;
-    transition: height 0.5s ease;
-    -webkit-transition: height 0.5s ease;
-    -moz-transition: height 0.5s ease;
-    -o-transition: height 0.5s ease;
+#myLP {
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
+
+  #myLP.go {
+    position: relative;  
+    height: 0%;
+    transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+}
+
 
 </style>
 
@@ -363,10 +371,10 @@ $(document).ready(function(){
   var $myBut = $('#myButton');
 
   $myBut.on("click", function(){
-    $('#myWS').show();
     $('#myLP').addClass("go");
-    $('#myLP').hide();
+    $("#myWS").show();
   })
+
 
 });
 
