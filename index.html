@@ -28,21 +28,6 @@
 .nav-wrapper li a {text-decoration: none;}
 .nav-wrapper li .active{background-color: #4fc3f7;}
 
-#myLP {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-}
-
-  #myLP.go {
-    position: relative;
-    height: 0%;
-    transition: height 1s ease;
-    -webkit-transition: height 1s ease;
-    -moz-transition: height 1s ease;
-    -o-transition: height 1s ease;
-}
-
 
 </style>
 
@@ -370,10 +355,10 @@ $(document).ready(function(){
   $myBut.on("click", function(){
     $('#myLP').animate({
       height: 'toggle'
-    },1500);
+    },1000);
     $("#myWS").animate({
       height: 'toggle'
-    },3000);
+    },2000);
   })
 
 
