@@ -29,11 +29,17 @@
 .nav-wrapper li .active{background-color: #4fc3f7;}
 
 
+#myLP {
+	height: 80%;
+}
 
 #myLP.go {
     height: 0%;
+    transition: height 0.5s ease;
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
 }
-
 
 </style>
 
@@ -82,251 +88,286 @@
 
 </div>
 
+         <div id="myWS">
 
+<!--   NAVBAR  -->
 
-                     <div id="myWS">
-
-                    <div class="navbar-fixed">
-                       <nav id="nav_f" class="blue-grey darken-2" role="navigation">
-                           <div class="container">
-                               <div class="nav-wrapper">
-                               <a href="#" id="logo-container" class="brand-logo" style="text-decoration: none;">RECursion</a>
-                                   <ul class="right hide-on-med-and-down">
-                                       <li class="waves-effect waves-light"><a href="#home" style="color: #fffde7" >Home</a></li>
-                                       <li class="waves-effect waves-light"><a href="#event" style="color: #fffde7">Events</a></li>
-                                       <li class="waves-effect waves-light"><a href="#getstarted" style="color: #fffde7">Getting Started</a></li>
-                                       <li class="waves-effect waves-light"><a href="#team" style="color: #fffde7">Team</a></li>
-                                       <li class="waves-effect waves-light"><a href="#contact" style="color: #fffde7">Contact</a></li>
-                                   </ul>
-                                   <ul id="nav-mobile" class="side-nav">
-                                     <li class="active"><a href="#">Home</a></li>
-                                     <li><a href="#about">About</a></li>
-                                     <li><a href="#team">Team</a></li>
-                                     <li><a href="#contact">Contact</a></li>
-                                   </ul>
-                               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                               </div>
-                           </div>
-                       </nav>
-                     </div>
-
-
-
-
-                <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
-                    <a class="btn-floating btn-large red">
-                      <i class="fa fa-bars right" aria-hidden="true"></i>
-                    </a>
-                    <ul>
-                      <li><a href="https://www.facebook.com/groups/recursion.nit/" class="btn-floating purple"><i class="fa fa-facebook fa-2" aria-hidden="true"></i></a></li>
-                      <li><a href="https://www.facebook.com/groups/recursion.nit/" class="btn-floating blue"><i class="fa fa-twitter fa-2" aria-hidden="true"></i></a></li>
-                      <li><a href="https://github.com/RECursion-NITD/" class="btn-floating black"><i class="fa fa-github fa-2" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-
-
-                 <div class="section no-pad-bot white scrollspy" id="event">
-                   <div class="container">
-                     <h2>Our Events</h2>
-                     <div class="row">
-                    <div class="col s12">
-                      <ul class="tabs">
-                        <li class="tab col s3"><a class="active" href="#future">Future</a></li>
-                        <li class="tab col s3"><a href="#past">Past </a></li>
-                      </ul>
-                    </div>
-                    <div id="future" class="col s12">
-                      <div class="row" style="padding-top:5%">
-                        <div class="col-sm-4">
-                          <div class="card">
-                           <div class="card-image waves-effect waves-block waves-light">
-                             <img class="activator" src="img/7.jpg">
-                           </div>
-                           <div class="card-content">
-                             <span class="card-title activator grey-text text-darken-4">REcode 1.0<i class="fa fa-bars right" aria-hidden="true"></i></span>
-                             <p><a href="#">link</a></p>
-                           </div>
-                           <div class="card-reveal">
-                             <span class="card-title grey-text text-darken-4">REcode 1.0<i class="material-icons right">close</i></span>
-                             <p>our recent contest</p>
-                           </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="past" class="col s12">
-                      <div class="row" style="padding-top:5%">
-                        <div class="col-sm-4">
-                          <div class="card">
-                           <div class="card-image waves-effect waves-block waves-light">
-                             <img class="activator" src="img/6.jpg">
-                           </div>
-                           <div class="card-content">
-                             <span class="card-title activator grey-text text-darken-4">REcode<i class="fa fa-bars right" aria-hidden="true"></i></span>
-                             <p><a href="#">link</a></p>
-                           </div>
-                           <div class="card-reveal">
-                             <span class="card-title grey-text text-darken-4">REcode<i class="material-icons right">close</i></span>
-                             <p>our recent contest</p>
-                           </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                 </div>
-
-
-
-               <div class="section no-pad-bot blue-grey darken-2 scrollspy" id="getstarted">
-                 <div class="container">
-                   <h2>How to get started</h2>
-                 </div>
-               </div>
-
-                                                                  <div class="parallax-container">
-                                                                      <div class="parallax"><img src="img/10.jpg" width=100px ></div>
-                                                                  </div>
-
-                             <div class="section no-pad-bot white scrollspy" id="about">
-                                 <div class="container">
-                                   <h2 style="color:white">About Us</h2>
-
-                                 </div>
-                             </div>
-
-
-          <div class="section scrollspy" id="team">
-               <div class="container" class="white">
-                   <h2 class="header text_b" style="color: #212121;"> Contact Us </h2>
-                   <div class="row">
-                       <div class="col s12 m4">
-                           <div class="card card-avatar">
-                               <div class="waves-effect waves-block waves-light">
-                                   <img class="activator" src="img/aman.jpg">
-                               </div>
-                               <div class="card-content">
-                                   <span class="card-title activator grey-text text-darken-4">Aman Agarwal <br/>
-                                       <small><em><a class="red-text text-darken-1" href="#">Persident</a></em></small></span>
-                                   <p>
-                                       <a class="blue-text text-lighten-2" href="https://www.facebook.com/aman8050">
-                                           <i class="fa fa-facebook-square"></i>
-                                       </a>
-                                       <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                       <i class="fa fa-envelope" aria-hidden="true"></i>
-                                       <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                           <i class="fa fa-twitter-square"></i>
-                                       </a> --><!--
-                                       <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira"> -->
-                                          <!--  <i class="fa fa-google-plus-square"></i>
-                                       </a>
-                                       <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                           <i class="fa fa-linkedin-square"></i>
-                                       </a> -->
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col s12 m4">
-                           <div class="card card-avatar">
-                               <div class="waves-effect waves-block waves-light">
-                                   <img class="activator" src="img/shrija.jpg">
-                               </div>
-                               <div class="card-content">
-                                   <span class="card-title activator grey-text text-darken-4">Shrija Mishra<br/>
-                                       <small><em><a class="red-text text-darken-1" href="#">Convenor</a></em></small>
-                                   </span>
-                                   <p>
-                                       <a class="blue-text text-lighten-2" href="https://www.facebook.com/shrija.mishra.750">
-                                           <i class="fa fa-facebook-square"></i>
-                                       </a>
-                                       <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                       <i class="fa fa-envelope" aria-hidden="true"></i>
-                                       <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                           <i class="fa fa-twitter-square"></i>
-                                       </a>
-                                       <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                           <i class="fa fa-google-plus-square"></i>
-                                       </a>
-                                       <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                           <i class="fa fa-linkedin-square"></i>
-                                       </a> -->
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="col s12 m4">
-                           <div class="card card-avatar">
-                               <div class="waves-effect waves-block waves-light">
-                                   <img class="activator" src="img/parakh.jpg">
-                               </div>
-                               <div class="card-content">
-                                   <span class="card-title activator grey-text text-darken-4">
-                                       Parakh Bansal <br/>
-                                       <small><em><a class="red-text text-darken-1" href="#">Treasurer</a></em></small></span>
-                                   <p>
-                                       <a class="blue-text text-lighten-2" href="https://www.facebook.com/parakh94">
-                                           <i class="fa fa-facebook-square"></i>
-                                       </a>
-                                       <i class="fa fa-phone-square" aria-hidden="true"></i>
-                                       <i class="fa fa-envelope" aria-hidden="true"></i>
-                                       <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                           <i class="fa fa-twitter-square"></i>
-                                       </a>
-                                       <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                           <i class="fa fa-google-plus-square"></i>
-                                       </a>
-                                       <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                           <i class="fa fa-linkedin-square"></i>
-                                       </a> -->
-                                   </p>
-                               </div>
-                           </div>
-                       </div>
-
+        <div class="navbar-fixed">
+           <nav id="nav_f" class="blue-grey darken-2" role="navigation">
+               <div class="container">
+                   <div class="nav-wrapper">
+                   <a href="#" id="logo-container" class="brand-logo" style="text-decoration: none;">RECursion</a>
+                       <ul class="right hide-on-med-and-down">
+                           <li class="waves-effect waves-light"><a href="#home" style="color: #fffde7" >Home</a></li>
+                           <li class="waves-effect waves-light"><a href="#event" style="color: #fffde7">Events</a></li>
+                           <li class="waves-effect waves-light"><a href="#getstarted" style="color: #fffde7">Getting Started</a></li>
+                           <li class="waves-effect waves-light"><a href="#team" style="color: #fffde7">Team</a></li>
+                           <li class="waves-effect waves-light"><a href="#contact" style="color: #fffde7">Contact</a></li>
+                       </ul>
+                       <ul id="nav-mobile" class="side-nav">
+                         <li class="active"><a href="#">Home</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#team">Team</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                       </ul>
+                   <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                    </div>
                </div>
+           </nav>
+         </div>
+
+
+<!-- FLOATING BUTTON -->
+
+        <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+              <i class="fa fa-bars right" aria-hidden="true"></i>
+            </a>
+            <ul>
+              <li><a href="https://www.facebook.com/groups/recursion.nit/" class="btn-floating purple"><i class="fa fa-facebook fa-2" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/groups/recursion.nit/" class="btn-floating blue"><i class="fa fa-twitter fa-2" aria-hidden="true"></i></a></li>
+              <li><a href="https://github.com/RECursion-NITD/" class="btn-floating black"><i class="fa fa-github fa-2" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+
+
+<!-- EVENTS -->
+
+     <div class="section no-pad-bot white scrollspy" id="event">
+       <div class="container">
+         <h2>Events</h2>
+         <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#future">Future</a></li>
+            <li class="tab col s3"><a href="#past">Past </a></li>
+          </ul>
+        </div>
+        <div id="future" class="col s12">
+          <div class="row" style="padding-top:5%">
+            
+            <div class="col-sm-4">
+              <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="img/7.jpg">
+               </div>
+               <div class="card-content">
+                 <span class="card-title activator grey-text text-darken-4">RECode 1.0<i class="fa fa-bars right" aria-hidden="true"></i></span>
+                 <p><a href="#">link</a></p>
+               </div>
+               <div class="card-reveal">
+                 <span class="card-title grey-text text-darken-4">RECode 1.0<i class="material-icons right">close</i></span>
+                 <p>our recent contest</p>
+               </div>
+              </div>
+            </div>
+         	<div class="col-sm-4">
+              <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="img/7.jpg">
+               </div>
+               <div class="card-content">
+                 <span class="card-title activator grey-text text-darken-4">SIMPLEX 2017<i class="fa fa-bars right" aria-hidden="true"></i></span>
+                 <p><a href="#">link</a></p>
+               </div>
+               <div class="card-reveal">
+                 <span class="card-title grey-text text-darken-4">SIMPLEX 2016<i class="material-icons right">close</i></span>
+                 <p>Annual contest at ANK, the Knowledge Fest</p>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="past" class="col s12">
+          <div class="row" style="padding-top:5%">
+            <div class="col-sm-4">
+              <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="img/6.jpg">
+               </div>
+               <div class="card-content">
+                 <span class="card-title activator grey-text text-darken-4">RECode<i class="fa fa-bars right" aria-hidden="true"></i></span>
+                 <p><a href="#">link</a></p>
+               </div>
+               <div class="card-reveal">
+                 <span class="card-title grey-text text-darken-4">RECode<i class="material-icons right">close</i></span>
+                 <p>our recent contest</p>
+               </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="card">
+               <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="img/7.jpg">
+               </div>
+               <div class="card-content">
+                 <span class="card-title activator grey-text text-darken-4">SIMPLEX 2016<i class="fa fa-bars right" aria-hidden="true"></i></span>
+                 <p><a href="#">link</a></p>
+               </div>
+               <div class="card-reveal">
+                 <span class="card-title grey-text text-darken-4">SIMPLEX 2016<i class="material-icons right">close</i></span>
+                 <p>Annual contest at ANK, the Knowledge Fest</p>
+               </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+<!-- PARALLAX 1 -->
+
+
+    <div class="parallax-container">
+          <div class="parallax"><img src="img/7.jpg" width=100px ></div>
+    </div>
+
+<!-- GETTINGSTARTED -->
+ 
+       <div class="section no-pad-bot blue-grey darken-2 scrollspy" id="getstarted">
+         <div class="container">
+           <h2>How to get started</h2>
+         </div>
+       </div>
+
+<!-- PARALLAX 2 -->
+
+      <div class="parallax-container">
+          <div class="parallax"><img src="img/10.jpg" width=100px ></div>
+      </div>
+
+<!-- ABOUT US -->
+
+     <div class="section no-pad-bot white scrollspy" id="about">
+         <div class="container">
+        	<h2 style="color: grey">Who are we?</h2>
+         </div>
+     </div>
+
+<!-- TEAM -->
+
+    <div class="section scrollspy" id="team">
+       <div class="container" class="white">
+           <h2 class="header text_b" style="color: #212121;"> Contact Us </h2>
+           <div class="row">
+               <div class="col s12 m4">
+                   <div class="card card-avatar">
+                       <div class="waves-effect waves-block waves-light">
+                           <img class="activator" src="img/aman.jpg">
+                       </div>
+                       <div class="card-content">
+                           <span class="card-title activator grey-text text-darken-4">Aman Agarwal <br/>
+                               <small><em><a class="red-text text-darken-1" href="#">Persident</a></em></small></span>
+                           <p>
+                               <a class="blue-text text-lighten-2" href="https://www.facebook.com/aman8050">
+                                   <i class="fa fa-facebook-square"></i>
+                               </a>
+                               <i class="fa fa-phone-square" aria-hidden="true"></i>
+                               <i class="fa fa-envelope" aria-hidden="true"></i>
+                               <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                   <i class="fa fa-twitter-square"></i>
+                               </a> --><!--
+                               <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira"> -->
+                                  <!--  <i class="fa fa-google-plus-square"></i>
+                               </a>
+                               <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                   <i class="fa fa-linkedin-square"></i>
+                               </a> -->
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col s12 m4">
+                   <div class="card card-avatar">
+                       <div class="waves-effect waves-block waves-light">
+                           <img class="activator" src="img/shrija.jpg">
+                       </div>
+                       <div class="card-content">
+                           <span class="card-title activator grey-text text-darken-4">Shrija Mishra<br/>
+                               <small><em><a class="red-text text-darken-1" href="#">Convenor</a></em></small>
+                           </span>
+                           <p>
+                               <a class="blue-text text-lighten-2" href="https://www.facebook.com/shrija.mishra.750">
+                                   <i class="fa fa-facebook-square"></i>
+                               </a>
+                               <i class="fa fa-phone-square" aria-hidden="true"></i>
+                               <i class="fa fa-envelope" aria-hidden="true"></i>
+                               <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                   <i class="fa fa-twitter-square"></i>
+                               </a>
+                               <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                                   <i class="fa fa-google-plus-square"></i>
+                               </a>
+                               <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                   <i class="fa fa-linkedin-square"></i>
+                               </a> -->
+                           </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="col s12 m4">
+                   <div class="card card-avatar">
+                       <div class="waves-effect waves-block waves-light">
+                           <img class="activator" src="img/parakh.jpg">
+                       </div>
+                       <div class="card-content">
+                           <span class="card-title activator grey-text text-darken-4">
+                               Parakh Bansal <br/>
+                               <small><em><a class="red-text text-darken-1" href="#">Treasurer</a></em></small></span>
+                           <p>
+                               <a class="blue-text text-lighten-2" href="https://www.facebook.com/parakh94">
+                                   <i class="fa fa-facebook-square"></i>
+                               </a>
+                               <i class="fa fa-phone-square" aria-hidden="true"></i>
+                               <i class="fa fa-envelope" aria-hidden="true"></i>
+                               <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
+                                   <i class="fa fa-twitter-square"></i>
+                               </a>
+                               <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
+                                   <i class="fa fa-google-plus-square"></i>
+                               </a>
+                               <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
+                                   <i class="fa fa-linkedin-square"></i>
+                               </a> -->
+                           </p>
+                       </div>
+                   </div>
+               </div>
+
            </div>
+       </div>
+   </div>
 
+<!-- FOOTER  -->
 
-                                                                             <footer id="contact" class="page-footer blue-grey darken-2 scrollspy">
-                                                                                 <div class="container">
-                                                                                     <div class="row">
-                                                                                         <div class="col l6 s12">
-                                                                                             <form class="col s12" action="contact.php" method="post">
-                                                                                                 <div class="row">
-                                                                                                     <div class="input-field col s6">
-                                                                                                         <i class="mdi-action-account-circle prefix white-text"></i>
-                                                                                                         <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                                                                                                         <label for="icon_prefix" class="white-text">First Name</label>
-                                                                                                     </div>
-                                                                                                     <div class="input-field col s6">
-                                                                                                         <i class="mdi-communication-email prefix white-text"></i>
-                                                                                                         <input id="icon_email" name="email" type="email" class="validate white-text">
-                                                                                                         <label for="icon_email" class="white-text">Email-id</label>
-                                                                                                     </div>
-                                                                                                     <div class="input-field col s12">
-                                                                                                         <i class="mdi-editor-mode-edit prefix white-text"></i>
-                                                                                                         <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-                                                                                                         <label for="icon_prefix2" class="white-text">Message</label>
-                                                                                                     </div>
-                                                                                                     <div class="col offset-s7 s5">
-                                                                                                         <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
-                                                                                                             <i class="mdi-content-send right white-text"></i>
-                                                                                                         </button>
-                                                                                                     </div>
-                                                                                                 </div>
-                                                                                             </form>
-                                                                                         </div>
-                                                                                     </div>
-                                                                                 </div>
-                                                                                 <div class="footer-copyright blue-grey darken-2">
-                                                                                     <div class="container">
-                                                                                         Made by RECursion NITD</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
-                                                                                     </div>
-                                                                                 </div>
-                                                                             </footer>
+   <footer class="page-footer blue-grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright blue-grey draken-4">
+        <div class="container">
+        © 2016 Copyright RECursion
+        <a class="grey-text text-lighten-4 right" href="#!">Designed by RECursion NITD</a>
+        </div>
+      </div>
+    </footer>
 
 </div>
 
@@ -345,7 +386,7 @@ $(document).ready(function(){
   $myBut.on("click", function(){
     $('#myWS').show();
     $('#myLP').addClass("go");
-    $('myLP').hide();
+    $('#myLP').hide();
   })
 
 });
