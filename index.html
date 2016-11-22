@@ -28,13 +28,21 @@
 .nav-wrapper li a {text-decoration: none;}
 .nav-wrapper li .active{background-color: #4fc3f7;}
 
-#myLP.go {
-    height: 0%;
-    transition: height 0.5s ease;
-    -webkit-transition: height 0.5s ease;
-    -moz-transition: height 0.5s ease;
-    -o-transition: height 0.5s ease;
+#myLP {
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
+
+  #myLP.go {
+    position: relative;
+    height: 0%;
+    transition: height 1s ease;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+}
+
 
 </style>
 
@@ -83,7 +91,7 @@
 
 </div>
 
-         <div id="myWS">
+<div id="myWS">
 
 <!--   NAVBAR  -->
 
@@ -140,7 +148,7 @@
         </div>
         <div id="future" class="col s12">
           <div class="row" style="padding-top:5%">
-            
+
             <div class="col-sm-4">
               <div class="card">
                <div class="card-image waves-effect waves-block waves-light">
@@ -221,7 +229,7 @@
     </div>
 
 <!-- GETTINGSTARTED -->
- 
+
        <div class="section no-pad-bot blue-grey darken-2 scrollspy" id="getstarted">
          <div class="container">
            <h2>How to get started</h2>
@@ -340,14 +348,12 @@
 
    <footer class="page-footer blue-grey darken-4">
         <div class="container">
-        <span style="font-size: 16px; color: #e3f2fd;letter-spacing: 1px;">Designed by RECursion © 2016</span>
-        <span style="float:right;">
-         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUvgWjyhptIah864yRGaULSjqFVcb10yAtXCcHduVsKtGXOA/formResponse" class="waves-effect waves-light btn">Feedback</a>
-  </span>
+          <span style="font-size: 16px; color: #e3f2fd;letter-spacing: 1px;">Designed by RECursion © 2016</span>
+          <span style="float:right;">
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUvgWjyhptIah864yRGaULSjqFVcb10yAtXCcHduVsKtGXOA/formResponse" class="waves-effect waves-light btn">Feedback</a>
+          </span>
         </div>
- 		</div>
     </footer>
-
 </div>
 
 <script src="min/plugin-min.js"></script>
@@ -358,15 +364,18 @@
 <script>
 
 $(document).ready(function(){
-  $('#myWS').hide();
-
+  $('#myWS').hide()
   var $myBut = $('#myButton');
 
   $myBut.on("click", function(){
-    $('#myWS').show();
-    $('#myLP').addClass("go");
-    $('#myLP').hide();
+    $('#myLP').animate({
+      height: 'toggle'
+    },1500);
+    $("#myWS").animate({
+      height: 'toggle'
+    },3000);
   })
+
 
 });
 
