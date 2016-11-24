@@ -9,7 +9,13 @@
 #intro, #work, #team {padding-top: 4rem;}
 
 
-#about, #getstarted, #event {
+#gallery{
+    min-height: 432px;
+    max-height: 664px;
+    position: relative;
+}
+
+#about, #event {
     min-height: 632px;
     max-height: 864px;
     position: relative;
@@ -271,77 +277,3 @@ nav a.button-collapse {
 footer.page-footer {
     margin-top: 0px !important;
 }
-
-#myCarousel {
-    margin-top: 60px;
-}
-
-.carousel-caption {
-    font-size: 24px;
-}
-
-.carousel-caption h4 {
-    font-size: 32px;
-}
-
-#myCarousel .item { height: 400px; }
-
-#slide1 {
-    background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
-}
-
-#slide2 {
-    background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
-}
-
-#slide3 {
-    background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
-}
-
-
-@media (max-width: 768px) {
-    
-    #myCarousel .item { height: 310px; }
-    
-    #slide1 {
-        background: url('../../images/carousel_small_01.jpg') top center no-repeat;
-    }
-    
-    #slide2 {
-        background: url('../../images/carousel_small_02.jpg') top center no-repeat;
-    }
-    
-    #slide3 {
-        background: url('../../images/carousel_small_03.jpg') top center no-repeat;
-    }
-    
-    .carousel-caption {
-        font-size: 16px;
-    }
-    
-    .carousel-caption h4 {
-        font-size: 22px;
-    }
-    
-}
-
-/* Large desktop */
-@media (min-width: 1200px) {
-
-    #myCarousel .item { height: 500px; }
-    
-    #slide1 {
-        background: url('../../images/carousel_large_01.jpg') top center no-repeat;
-    }
-    
-    #slide2 {
-        background: url('../../images/carousel_large_02.jpg') top center no-repeat;
-    }
-    
-    #slide3 {
-        background: url('../../images/carousel_large_03.jpg') top center no-repeat;
-    }
-
-}
-
-
