@@ -9,7 +9,13 @@
 #intro, #work, #team {padding-top: 4rem;}
 
 
-#about, #gallery, #event {
+#gallery{
+    min-height: 432px;
+    max-height: 664px;
+    position: relative;
+}
+
+#about, #event {
     min-height: 632px;
     max-height: 864px;
     position: relative;
