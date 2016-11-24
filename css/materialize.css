@@ -3,6 +3,45 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+ /*Css for the about us part*/
+ .TextWrap{
+    float: left;
+    margin 10px;
+    width: 45%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgba(214, 214, 214, 0.2) rgba(214, 214, 214, 0.2);
+    box-shadow: 10px 10px 5px #888888;
+}
+.container2{
+    font-family: 'Lato';
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  font-size: 19px;
+  text-align: justify;
+}
+.container2 blockquote{
+    font-family: 'Pacifico', cursive;
+    color: #770d0d;
+    font-size: 25px;
+    text-align: center;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+}
+@media only screen and (min-width : 601px) {
+  .container2 {
+    width: 85%; } }
+
+@media only screen and (min-width : 993px) {
+  .container2 {
+    width: 70%; } }
+/*here the about us part ends*/
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
