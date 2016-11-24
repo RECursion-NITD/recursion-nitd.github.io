@@ -16,11 +16,26 @@
 #intro, #work, #team {padding-top: 4rem;}
 
 
-#index-banner, #about, #getstarted, #event {
+#about, #getstarted, #event {
     min-height: 632px;
     max-height: 864px;
     position: relative;
     background-color: #2196F3;
+}
+
+#loading-page {
+    min-height: 532px;
+    max-height: 764px;
+    position: relative;
+
+}
+
+#enter-button {
+    min-height: 120px;
+    max-height: 340px;
+    position: relative;
+
+
 }
 
 #nav_f{
