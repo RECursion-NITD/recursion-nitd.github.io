@@ -44,7 +44,7 @@
 </style>
 
 
-<div id="myLP" class = "wow bounce">
+<div id="myLP" class = "wow bounce" data-wow-delay="500ms" data-wow-duration="2s">
 <div class="section no-pad-bot amber darken-3 scrollspy " id="loading-page">
     <div class="container">
         <h3 class="text_h center header cd-headline letters type">
@@ -150,16 +150,16 @@
 <!-- EVENTS -->
 
      <div class="section no-pad-bot white scrollspy" id="event">
-       <div class="container wow slideInUp">
-         <h2 data-sr="enter left and then move 15px"  >Events</h2>
+       <div class="container">
+         <h2 class="wow fadeInUp" data-wow-duration="3000ms">Events</h2>
          <div class="row">
         <div class="col s12">
           <ul class="tabs">
-            <li class="tab col s3"><a class="active wow bounceInLeft" href="#future">Future</a></li>
-            <li class="tab col s3"><a class="active wow bounceInLeft" href="#past">Past </a></li>
+            <li class="tab col s3"><a class="active wow slideInDown" data-wow-duration="3000ms" href="#future">Future</a></li>
+            <li class="tab col s3"><a class="active wow slideInDown" data-wow-duration="3000ms" href="#past">Past </a></li>
           </ul>
         </div>
-        <div id="future" class="col s12">
+        <div id="future" class="col s12 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="500ms">
           <div class="row" style="padding-top:5%">
 
             <div class="col-sm-4">
@@ -167,7 +167,7 @@
                <div class="card-image waves-effect waves-block waves-light">
                  <img class="img-responsive activator" src="img/7.jpg">
                </div>
-               <div class="card-content">
+               <div class="card-content wow fadeInUp" data-wow-delay="1s">
                  <span class="card-title activator grey-text text-darken-4">RECode 1.0<i class="fa fa-bars right" aria-hidden="true"></i></span>
                  <p><a href="#">link</a></p>
                </div>
@@ -182,7 +182,7 @@
                <div class="card-image waves-effect waves-block waves-light">
                  <img class="img-responsive activator" src="img/7.jpg">
                </div>
-               <div class="card-content">
+               <div class="card-content wow fadeInUp" data-wow-delay="1s">
                  <span class="card-title activator grey-text text-darken-4">SIMPLEX 2017<i class="fa fa-bars right" aria-hidden="true"></i></span>
                  <p><a href="#">link</a></p>
                </div>
@@ -194,14 +194,14 @@
             </div>
           </div>
         </div>
-        <div id="past" class="col s12">
+        <div id="past" class="col s12 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="500ms">
           <div class="row" style="padding-top:5%">
             <div class="col-sm-4">
               <div class="card">
                <div class="card-image waves-effect waves-block waves-light">
                  <img class="img-responsive activator" src="img/6.jpg">
                </div>
-               <div class="card-content">
+               <div class="card-content wow fadeInUp" data-wow-delay="1s">
                  <span class="card-title activator grey-text text-darken-4">RECode<i class="fa fa-bars right" aria-hidden="true"></i></span>
                  <p><a href="#">link</a></p>
                </div>
@@ -217,7 +217,7 @@
                <div class="card-image waves-effect waves-block waves-light">
                  <img class="img-responsive activator" src="img/7.jpg">
                </div>
-               <div class="card-content">
+               <div class="card-content wow fadeInUp" data-wow-delay="1s">
                  <span class="card-title activator grey-text text-darken-4">SIMPLEX 2016<i class="fa fa-bars right" aria-hidden="true"></i></span>
                  <p><a href="#">link</a></p>
                </div>
@@ -237,24 +237,25 @@
     <!-- Parralax 1 -->
 
     <div class="parallax-container">
-          <div class="parallax"><img src="img/101.jpg" width=100px ></div>
+          <div class="parallax wow fadeIn" data-wow-duration="6000ms"><img src="img/101.jpg" width=100px ></div>
     </div>
 <!-- ABOUT US -->
 
      <div class="section no-pad-bot white scrollspy" id="about">
          <div class="container">
-          <h2 class = "wow fadeIn" data-wow-delay="2s">Who are we?</h2>
+          <h2 class ="wow fadeInUp">Who are we?</h2>
          </div>
          <div class="container2">
-            <IMG class="TextWrap" SRC="img/show.jpg">
-            <P>Recursion NIT Durgapur is an initiative to embolden the budding coding minds through regular Code Classes, robust coding competitions and geeky sessions.</p>
-            <P>
-            Pioneered by a faction of enthusiast in 2014, Recursion has continued to evolve ever since.Besides a fancy placement package, We seek to ameliorate participation in programming competitions like ACM ICPC etc.
-            <P>
+            <img class="TextWrap wow fadeIn" data-wow-duration="4s"src="img/show.jpg">
+            <p class="wow fadeIn" data-wow-duration="4s">Recursion NIT Durgapur is an initiative to embolden the budding coding minds through regular Code Classes, robust coding competitions and geeky sessions.</p>
+            <p class="wow fadeIn" data-wow-duration="4s">
+              Pioneered by a faction of enthusiast in 2014, Recursion has continued to evolve ever since.Besides a fancy placement package, We seek to ameliorate participation in programming competitions like ACM ICPC etc.
+            </p>
+            <p class="wow fadeIn" data-wow-duration="4s">
             Our dynamic panel is invariably available to sort any techie doubts and cultivate positivity in you. We intend to create an intriguing ambience where coding is more of a mind sport and after every green tick the Coder in you gets bigger and wittier.
             So if you have those bits hovering over your head 24*7, Recursion is your Solution!<Br>
             <P align="Center">
-            <blockquote>
+            <blockquote class="wow fadeInUp" data-wow-duration="2s">
             "Coding is a Choice, not a Compulsion.<Br>When you are doing it, just do it with a smile."
             <p></p></blockquote>
           </div>
@@ -262,7 +263,7 @@
      </div>
 
 <!-- PARALLAX 2 -->
-<div class="parallax-container">
+<div class="parallax-container wow fadeIn" data-wow-duration="5s" data-wow-delay="1s">
   <!-- <div class="parallax"><img src="img/7.jpg" width=100px ></div> -->
   <div id="owl-ca" class="owl-carousel owl-theme">
     <div class="item"><img src="img/class1.jpg"></div>
@@ -275,11 +276,11 @@
 </div>
 <!-- TEAM -->
 
-    <div class="section scrollspy" id="team">
+    <div class="section scrollspy wow fadeInUp" data-wow-duration="4s" id="team">
        <div class="container" class="white">
-           <h2 class="header text_b" style="color: #212121;"> Contact Us </h2>
+           <h2 class="header text_b" style="color: #212121;"> Our Team </h2>
            <div class="row">
-               <div class="col s12 m4">
+               <div class="col s12 m4 wow fadeInDown" data-wow-delay="2s" data-wow-duration="1s">
                    <div class="card card-avatar">
                        <div class="waves-effect waves-block waves-light">
                            <img class=" activator" src="img/aman.jpg">
@@ -293,20 +294,30 @@
                                </a>
                                <i class="fa fa-phone-square" aria-hidden="true"></i>
                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                               <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                   <i class="fa fa-twitter-square"></i>
-                               </a> --><!--
-                               <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira"> -->
-                                  <!--  <i class="fa fa-google-plus-square"></i>
-                               </a>
-                               <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                   <i class="fa fa-linkedin-square"></i>
-                               </a> -->
                            </p>
                        </div>
                    </div>
                </div>
-               <div class="col s12 m4">
+               <div class="col s12 m4 wow fadeInDown" data-wow-delay="2s" data-wow-duration="1s">
+                 <div class="card card-avatar">
+                   <div class="waves-effect waves-block waves-light">
+                     <img class=" activator" src="img/parakh.jpg">
+                   </div>
+                   <div class="card-content">
+                     <span class="card-title activator grey-text text-darken-4">
+                       Parakh Bansal <br/>
+                       <small><em><a class="red-text text-darken-1" href="#">Treasurer</a></em></small></span>
+                       <p>
+                         <a class="blue-text text-lighten-2" href="https://www.facebook.com/parakh94">
+                           <i class="fa fa-facebook-square"></i>
+                         </a>
+                         <i class="fa fa-phone-square" aria-hidden="true"></i>
+                         <i class="fa fa-envelope" aria-hidden="true"></i>
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+               <div class="col s12 m4 wow fadeInDown" data-wow-delay="2s" data-wow-duration="1s">
                    <div class="card card-avatar">
                        <div class="waves-effect waves-block waves-light">
                            <img class=" activator" src="img/shrija.jpg">
@@ -321,48 +332,13 @@
                                </a>
                                <i class="fa fa-phone-square" aria-hidden="true"></i>
                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                               <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                   <i class="fa fa-twitter-square"></i>
-                               </a>
-                               <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                   <i class="fa fa-google-plus-square"></i>
-                               </a>
-                               <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                   <i class="fa fa-linkedin-square"></i>
-                               </a> -->
                            </p>
                        </div>
                    </div>
                </div>
-               <div class="col s12 m4">
-                   <div class="card card-avatar">
-                       <div class="waves-effect waves-block waves-light">
-                           <img class=" activator" src="img/parakh.jpg">
-                       </div>
-                       <div class="card-content">
-                           <span class="card-title activator grey-text text-darken-4">
-                               Parakh Bansal <br/>
-                               <small><em><a class="red-text text-darken-1" href="#">Treasurer</a></em></small></span>
-                           <p>
-                               <a class="blue-text text-lighten-2" href="https://www.facebook.com/parakh94">
-                                   <i class="fa fa-facebook-square"></i>
-                               </a>
-                               <i class="fa fa-phone-square" aria-hidden="true"></i>
-                               <i class="fa fa-envelope" aria-hidden="true"></i>
-                               <!-- <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                   <i class="fa fa-twitter-square"></i>
-                               </a>
-                               <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                   <i class="fa fa-google-plus-square"></i>
-                               </a>
-                               <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                   <i class="fa fa-linkedin-square"></i>
-                               </a> -->
-                           </p>
-                       </div>
-                   </div>
-               </div>
-
+           </div>
+           <div align=center>
+             <button  class="red center btn-large waves-effect waves-teal wow fadeIn" data-wow-><span style="font-size: 20px;color: #eef0de">All</span></button>
            </div>
        </div>
    </div>
@@ -371,9 +347,9 @@
 
    <footer class="page-footer blue-grey darken-4">
         <div class="container">
-          <span style="font-size: 16px; color: #e3f2fd;letter-spacing: 1px;">Designed by RECursion © 2016</span>
+          <span style="font-size: 16px; color: #e3f2fd;letter-spacing: 1px;" class="wow bounceInUp" data-wow-delay="2s" >Designed by RECursion | 2016</span>
           <span style="float:right;">
-           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUvgWjyhptIah864yRGaULSjqFVcb10yAtXCcHduVsKtGXOA/formResponse" class="waves-effect waves-light btn">Feedback</a>
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUvgWjyhptIah864yRGaULSjqFVcb10yAtXCcHduVsKtGXOA/formResponse" class="waves-effect waves-light btn wow bounceInUp" data-wow-delay="2s">Feedback</a>
           </span>
         </div>
     </footer>
@@ -398,17 +374,17 @@ $(document).ready(function(){
     },1000);
     $("#myWS").animate({
       height: 'toggle'
-    },2000);
+    },3000);
     $('html, body').animate({
         scrollTop: 10
-    }, 1000);
+    }, 2000);
     new WOW().init();
 
 
   })
   $("#owl-ca").owlCarousel({
 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
       items : 3,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3],
