@@ -10,6 +10,8 @@
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
     <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" type="text/css" rel="stylesheet" >
+    <link href="css/owl.theme.css" type="text/css" rel="stylesheet" >
     <link href="css/style.css" type="text/css" rel="stylesheet" >
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,20 +29,23 @@
 .nav-wrapper li a {text-decoration: none;}
 .nav-wrapper li .active{background-color: #4fc3f7;}
 
-  
+#owl-ca .item{
+  margin: 3px;
+}
+#owl-ca .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 </style>
-
-
-</script>
-
-
 
 
 <div id="myLP">
 <div class="section no-pad-bot amber darken-3 scrollspy" id="loading-page">
     <div class="container">
         <h3 class="text_h center header cd-headline letters type">
-            <span class="cd-words-wrapper waiting">
+            <span class="waiting">
                 <b class="is-visible">Can you write a piece of code?</b>
                 <b>No? Well, let's help you write some</b>
                 <b>Welcome to RECursion;</b>
@@ -83,17 +88,17 @@
                        <ul class="right hide-on-med-and-down">
                            <li class="waves-effect waves-light"><a href="#home" style="color: #fffde7" >Home</a></li>
                            <li class="waves-effect waves-light"><a href="#event" style="color: #fffde7">Events</a></li>
-                           <li class="waves-effect waves-light"><a href="getting started ka link" style="color: #fffde7">Getting Started</a></li>
-                           <li class="waves-effect waves-light"><a href="#gallery" style="color: #fffde7">Gallery</a></li>
-                           <li class="waves-effect waves-light"><a href="#about" style="color: #fffde7">About us</a></li>
+                           <li class="waves-effect waves-light"><a href="#" style="color: #fffde7">Get Started</a></li>
+                           <!-- <li class="waves-effect waves-light"><a href="#gallery" style="color: #fffde7">Gallery</a></li>
+                           <li class="waves-effect waves-light"><a href="#about" style="color: #fffde7">About us</a></li> -->
                            <li class="waves-effect waves-light"><a href="#team" style="color: #fffde7">Contact</a></li>
                        </ul>
                        <ul id="nav-mobile" class="side-nav">
                          <li class="active"><a href="#">Home</a></li>
                          <li><a href="#event">Events</a></li>
                          <li><a href="">Getting Started</a></li>
-                         <li><a href="#gallery">Gallery</a></li>
-                         <li><a href="#about">About us</a></li>
+                         <!-- <li><a href="#gallery">Gallery</a></li>
+                         <li><a href="#about">About us</a></li> -->
                          <li><a href="#team">Contact</a></li>
                        </ul>
                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -110,6 +115,14 @@
                     <h1>RECursion</h1>
                     <h3>Programming Club of NIT Durgapur</h3>
                     <hr class="intro-divider">
+                     <ul class="list-inline intro-social-buttons">
+                       <li>
+                      <a href="https://www.facebook.com/groups/recursion.nit/" class="btn btn-default"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                       </li>
+                       <li>
+                      <a href="https://github.com/RECursion-NITD/" class="btn btn-default"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                       </li>
+                     </ul>
                 </div>
             </div>
         </div>
@@ -130,12 +143,6 @@
               <li><a href="https://github.com/RECursion-NITD/" class="btn-floating black"><i class="fa fa-github fa-2" aria-hidden="true"></i></a></li>
             </ul>
           </div>
-
-<!-- Parralax 1 -->
-
-   <div class="parallax-container">
-          <div class="parallax"><img src="img/7.jpg" width=100px ></div>
-    </div>
 
 <!-- EVENTS -->
 
@@ -223,11 +230,12 @@
       </div>
       </div>
     </div>
- 
 
-<!-- GETTINGSTARTED -->
-  
+    <!-- Parralax 1 -->
 
+    <div class="parallax-container">
+          <div class="parallax"><img src="img/101.jpg" width=100px ></div>
+    </div>
 <!-- ABOUT US -->
 
      <div class="section no-pad-bot white scrollspy" id="about">
@@ -235,11 +243,11 @@
           <h2 style="color: grey">Who are we?</h2>
          </div>
          <div class="container2">
-            <IMG class="TextWrap" SRC="img/10.jpg">
+            <IMG class="TextWrap" SRC="img/show.jpg">
             <P>Recursion NIT Durgapur is an initiative to embolden the budding coding minds through regular Code Classes, robust coding competitions and geeky sessions.</p>
             <P>
             Pioneered by a faction of enthusiast in 2014, Recursion has continued to evolve ever since.Besides a fancy placement package, We seek to ameliorate participation in programming competitions like ACM ICPC etc.
-            <P><br />
+            <P>
             Our dynamic panel is invariably available to sort any techie doubts and cultivate positivity in you. We intend to create an intriguing ambience where coding is more of a mind sport and after every green tick the Coder in you gets bigger and wittier.
             So if you have those bits hovering over your head 24*7, Recursion is your Solution!<Br>
             <P align="Center">
@@ -247,16 +255,21 @@
             "Coding is a Choice, not a Compulsion.<Br>When you are doing it, just do it with a smile."
             <p></p></blockquote>
           </div>
+
      </div>
 
-
-
 <!-- PARALLAX 2 -->
-
-    <div class="parallax-container">
-          <div class="parallax"><img src="img/101.jpg" width=100px ></div>
-      </div>
-
+<div class="parallax-container">
+  <!-- <div class="parallax"><img src="img/7.jpg" width=100px ></div> -->
+  <div id="owl-ca" class="owl-carousel owl-theme">
+    <div class="item"><img src="img/class1.jpg"></div>
+    <div class="item"><img src="img/class2.jpg"></div>
+    <div class="item"><img src="img/class3.jpg"></div>
+    <div class="item"><img src="img/class4.jpg"></div>
+    <div class="item"><img src="img/class5.jpg"></div>
+    <div class="item"><img src="img/class6.jpg"></div>
+  </div>
+</div>
 <!-- TEAM -->
 
     <div class="section scrollspy" id="team">
@@ -366,6 +379,7 @@
 <script src="min/plugin-min.js"></script>
 <script src="min/custom-min.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
@@ -382,7 +396,16 @@ $(document).ready(function(){
       height: 'toggle'
     },2000);
   })
+  $("#owl-ca").owlCarousel({
 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+      slideSpeed: 200,
+      responsive: true
+
+  });
 
 });
 
