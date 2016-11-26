@@ -16,6 +16,7 @@
     <link href="css/owl.theme.css" type="text/css" rel="stylesheet" >
     <link href="css/style.css" type="text/css" rel="stylesheet" >
     <link href="css/animate.min.css" type="text/css" rel="stylesheet" >
+
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -42,6 +43,21 @@
 }
 
 </style>
+
+<div id="preLoad" class="blue-grey darken-2" style="position:relative; height:100%; width:100%;">
+  <div class="preloader-wrapper big active" style="  position: fixed; top: 50%; left: 50%;">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <div id="myLP" class = "wow bounce" data-wow-delay="500ms" data-wow-duration="2s" style="height:100%; width:100%;" >
@@ -91,17 +107,17 @@
                        <ul class="right hide-on-med-and-down">
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#home" style="color: #fffde7" >Home</a></li>
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#event" style="color: #fffde7">Events</a></li>
-                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#" style="color: #fffde7">Get Started</a></li>
-                           <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#gallery" style="color: #fffde7">Gallery</a></li>
-                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#about" style="color: #fffde7">About us</a></li> -->
+                           <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#" style="color: #fffde7">Get Started</a></li> -->
+                           <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#gallery" style="color: #fffde7">Gallery</a></li> -->
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#about" style="color: #fffde7">About us</a></li>
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#team" style="color: #fffde7">Contact</a></li>
                        </ul>
                        <ul id="nav-mobile" class="side-nav">
                          <li class="active"><a href="#">Home</a></li>
                          <li><a href="#event">Events</a></li>
-                         <li><a href="">Getting Started</a></li>
-                         <!-- <li><a href="#gallery">Gallery</a></li>
-                         <li><a href="#about">About us</a></li> -->
+                         <!-- <li><a href="">Getting Started</a></li> -->
+                         <!-- <li><a href="#gallery">Gallery</a></li> -->
+                         <li><a href="#about">About us</a></li>
                          <li><a href="#team">Contact</a></li>
                        </ul>
                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -337,7 +353,15 @@
 
 <script>
 $(document).ready(function(){
-  $('#myWS').hide()
+  $('#myLP').hide();
+  $('#preLoad').fadeOut(4200, function(){
+    $('#myLP').show();
+  });
+  
+  
+  $('#myWS').hide();
+  
+  
   var $myBut = $('#myButton');
   new WOW().init();
 
