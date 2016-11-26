@@ -28,11 +28,9 @@
 <body>
 
 <style>
-
 .nav-wrapper li:hover { background-color:#4fc3f7; }
 .nav-wrapper li a {text-decoration: none;}
 .nav-wrapper li .active{background-color: #4fc3f7;}
-
 #owl-ca .item{
   margin: 3px;
 }
@@ -41,7 +39,6 @@
   width: 100%;
   height: auto;
 }
-
 </style>
 
 <div id="preLoad" class="blue-grey darken-2" style="position:relative; height:100%; width:100%;">
@@ -66,9 +63,8 @@
             <h3 class="text_h center header cd-headline letters type">
                 <span class="waiting">
                 	<b class="is-visible"></b>
-                    <b>Can you write a piece of code?</b>
-                    <b>No? Well, let's help you write some</b>
-                    <b>Welcome to RECursion;</b>
+                    <b>printf("Welcome to RECursion");</b>
+                    <b>Welcome to RECursion</b>
                     <b>:)</b>
                 </span>
             </h3>
@@ -365,7 +361,6 @@ $(document).ready(function(){
   
   var $myBut = $('#myButton');
   new WOW().init();
-
   $myBut.on("click", function(){
     $('#myLP').animate({
       height: 'toggle'
@@ -377,11 +372,8 @@ $(document).ready(function(){
         scrollTop: 10
     }, 2000);
     new WOW().init();
-
-
   })
   $("#owl-ca").owlCarousel({
-
       autoPlay: 5000, //Set AutoPlay to 3 seconds
       items : 3,
       itemsDesktop : [1199,3],
@@ -389,9 +381,7 @@ $(document).ready(function(){
       slideSpeed: 200,
       responsive: true
   });
-
 });
-
 </script>
 
 </body>
