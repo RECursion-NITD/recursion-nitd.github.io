@@ -15,6 +15,7 @@
     <link href="css/owl.carousel.css" type="text/css" rel="stylesheet" >
     <link href="css/owl.theme.css" type="text/css" rel="stylesheet" >
     <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <link href="css/animate.min.css" type="text/css" rel="stylesheet" >
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -43,8 +44,8 @@
 </style>
 
 
-<div id="myLP">
-<div class="section no-pad-bot amber darken-3 scrollspy" id="loading-page">
+<div id="myLP" class = "wow bounce">
+<div class="section no-pad-bot amber darken-3 scrollspy " id="loading-page">
     <div class="container">
         <h3 class="text_h center header cd-headline letters type">
             <span class="waiting">
@@ -59,13 +60,13 @@
     <div class="section amber darken-3" id="enter-button">
        <span align=center>
        <ul>
-      <li ><button class="btn-flat btn-large waves-effect waves-teal" id="myButton"><i class="material-icons right">lock_open</i><span style="font-size: 20px;color: #f4ff81">ENTER</span></button></td></li>
+      <li ><button class="btn-flat btn-large waves-effect waves-teal wow fadeIn" id="myButton"><i class="material-icons right">lock_open</i><span style="font-size: 20px;color: #f4ff81">ENTER</span></button></td></li>
     </ul>
     </span>
     </div>
 </div>
 
-<div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+<div class="fixed-action-btn click-to-toggle wow bounceInRight" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large red">
       <i class="fa fa-bars right" aria-hidden="true"></i>
     </a>
@@ -79,21 +80,21 @@
 
 </div>
 
-<div id="myWS">
+<div id="myWS" class="wow fadeIn">
 <!--   NAVBAR  -->
 
         <div class="navbar-fixed">
            <nav id="nav_f" class="blue-grey darken-2" role="navigation">
                <div class="container">
                    <div class="nav-wrapper">
-                   <a href="#" id="logo-container" class="brand-logo" style="text-decoration: none;">RECursion</a>
+                   <a href="#" id="logo-container" class="brand-logo wow pulse" data-wow-duration="1s" data-wow-iteration="infinite" style="text-decoration: none;">RECursion</a>
                        <ul class="right hide-on-med-and-down">
-                           <li class="waves-effect waves-light"><a href="#home" style="color: #fffde7" >Home</a></li>
-                           <li class="waves-effect waves-light"><a href="#event" style="color: #fffde7">Events</a></li>
-                           <li class="waves-effect waves-light"><a href="#" style="color: #fffde7">Get Started</a></li>
-                           <!-- <li class="waves-effect waves-light"><a href="#gallery" style="color: #fffde7">Gallery</a></li>
-                           <li class="waves-effect waves-light"><a href="#about" style="color: #fffde7">About us</a></li> -->
-                           <li class="waves-effect waves-light"><a href="#team" style="color: #fffde7">Contact</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#home" style="color: #fffde7" >Home</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#event" style="color: #fffde7">Events</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#" style="color: #fffde7">Get Started</a></li>
+                           <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#gallery" style="color: #fffde7">Gallery</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#about" style="color: #fffde7">About us</a></li> -->
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#team" style="color: #fffde7">Contact</a></li>
                        </ul>
                        <ul id="nav-mobile" class="side-nav">
                          <li class="active"><a href="#">Home</a></li>
@@ -109,19 +110,19 @@
            </nav>
          </div>
 
- <div class="intro-header scrollspy" id="home">
+ <div class="intro-header scrollspy wow slideInUp" id="home" >
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <h1>RECursion</h1>
-                    <h3>Programming Club of NIT Durgapur</h3>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.5s">RECursion</h1>
+                    <h3 class="wow fadeInDown" data-wow-delay="0.5s">Programming Club of NIT Durgapur</h3>
                     <hr class="intro-divider">
                      <ul class="list-inline intro-social-buttons">
-                       <li>
+                       <li class="wow fadeInLeft" data-wow-delay="1s">
                       <a href="https://www.facebook.com/groups/recursion.nit/" class="btn btn-default"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                        </li>
-                       <li>
+                       <li class="wow fadeInRight" data-wow-delay="1s">
                       <a href="https://github.com/RECursion-NITD/" class="btn btn-default"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                        </li>
                      </ul>
@@ -149,13 +150,13 @@
 <!-- EVENTS -->
 
      <div class="section no-pad-bot white scrollspy" id="event">
-       <div class="container">
-         <h2>Events</h2>
+       <div class="container wow slideInUp">
+         <h2 data-sr="enter left and then move 15px"  >Events</h2>
          <div class="row">
         <div class="col s12">
           <ul class="tabs">
-            <li class="tab col s3"><a class="active" href="#future">Future</a></li>
-            <li class="tab col s3"><a href="#past">Past </a></li>
+            <li class="tab col s3"><a class="active wow bounceInLeft" href="#future">Future</a></li>
+            <li class="tab col s3"><a class="active wow bounceInLeft" href="#past">Past </a></li>
           </ul>
         </div>
         <div id="future" class="col s12">
@@ -242,7 +243,7 @@
 
      <div class="section no-pad-bot white scrollspy" id="about">
          <div class="container">
-          <h2 style="color: grey">Who are we?</h2>
+          <h2 class = "wow fadeIn" data-wow-delay="2s">Who are we?</h2>
          </div>
          <div class="container2">
             <IMG class="TextWrap" SRC="img/show.jpg">
@@ -382,21 +383,20 @@
 <script src="min/custom-min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script>
-
 $(document).ready(function(){
   $('#myWS').hide()
   var $myBut = $('#myButton');
+  new WOW().init();
 
   $myBut.on("click", function(){
     $('#myLP').animate({
       height: 'toggle'
     },1000);
-    $("#myWS").animate({
-      height: 'toggle'
-    },2000);
+    $("#myWS").show();
   })
   $("#owl-ca").owlCarousel({
 
@@ -406,7 +406,6 @@ $(document).ready(function(){
       itemsDesktopSmall : [979,3],
       slideSpeed: 200,
       responsive: true
-
   });
 
 });
