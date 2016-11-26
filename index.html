@@ -58,11 +58,11 @@
     </div>
 </div>
     <div class="section amber darken-3" id="enter-button">
-       <span align=center>
+      <span align=center>
        <ul>
-      <li ><button class="btn-flat btn-large waves-effect waves-teal wow fadeIn" id="myButton"><i class="material-icons right">lock_open</i><span style="font-size: 20px;color: #f4ff81">ENTER</span></button></td></li>
-    </ul>
-    </span>
+        <li ><button class="btn-flat btn-large waves-effect waves-teal wow fadeIn" id="myButton"><i class="material-icons right">lock_open</i><span style="font-size: 20px;color: #f4ff81">ENTER</span></button></td></li>
+        </ul>
+      </span>
     </div>
 </div>
 
@@ -80,7 +80,7 @@
 
 </div>
 
-<div id="myWS" class="wow fadeIn">
+<div id="myWS" class="wow fadeIn" >
 <!--   NAVBAR  -->
 
         <div class="navbar-fixed">
@@ -396,7 +396,15 @@ $(document).ready(function(){
     $('#myLP').animate({
       height: 'toggle'
     },1000);
-    $("#myWS").show();
+    $("#myWS").animate({
+      height: 'toggle'
+    },2000);
+    $('html, body').animate({
+        scrollTop: 10
+    }, 1000);
+    new WOW().init();
+
+
   })
   $("#owl-ca").owlCarousel({
 
