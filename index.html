@@ -25,9 +25,11 @@
 
 </head>
 
-<body style="overflow: hidden">
+<body class="of">
 
 <style>
+.of {overflow: hidden;}
+
 .nav-wrapper li:hover { background-color:#4fc3f7; }
 .nav-wrapper li a {text-decoration: none;}
 .nav-wrapper li .active{background-color: #4fc3f7;}
@@ -362,6 +364,7 @@ $(document).ready(function(){
   var $myBut = $('#myButton');
   new WOW().init();
   $myBut.on("click", function(){
+  	$('body').removeClass('of');
     $('#myLP').animate({
       height: 'toggle'
     },1000);
