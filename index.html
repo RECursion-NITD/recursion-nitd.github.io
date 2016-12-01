@@ -342,7 +342,7 @@
                    </div>
                </div>
            </div>
-           <div align=center>
+           <div style="text-align: center;">
              <button id="teamBut" class="red center btn waves-effect waves-teal wow fadeIn" data-wow-><span style="font-size: 20px;color: #eef0de">All</span></button>         
            </div>
        </div>
@@ -352,9 +352,9 @@
      <div id="secondPage">
 
 
-<div class="container">
+<div class="container-fluid">
 <div class="row">
-<div class="col-md-2">
+<div class="col-md-2" style="text-align: center;">
            <div class="card-avatar2">
                    <div class="waves-effect waves-block waves-light">
                      <img class=" activator" src="img/parakh.jpg">
@@ -376,7 +376,7 @@
                    </div>
       	   </div>
 </div>
-<div class="col-md-2">
+<div class="col-md-2" style="text-align: center;">
     <div class="card-avatar2">
                    <div class="waves-effect waves-block waves-light">
                      <img class=" activator" src="img/parakh.jpg">
@@ -399,8 +399,8 @@
       	   </div>
 
 </div>
-<div class="col-md-2">
-    <div class="card-avatar2">
+<div class="col-md-2" style="text-align: center;">
+    <div class="card-avatar2" >
                    <div class="waves-effect waves-block waves-light">
                      <img class=" activator" src="img/parakh.jpg">
                    </div>
@@ -422,31 +422,7 @@
       	   </div>
 
 </div>
-<div class="col-md-2">
-    <div class="card-avatar2">
-                   <div class="waves-effect waves-block waves-light">
-                     <img class=" activator" src="img/parakh.jpg">
-                   </div>
-      	   </div><br />
-      	       <div class="card-avatar2">
-                   <div class="waves-effect waves-block waves-light">
-                     <img class=" activator" src="img/parakh.jpg">
-                   </div>
-      	   </div><br />
-      	      <div class="card-avatar2">
-                   <div class="waves-effect waves-block waves-light">
-                     <img class=" activator" src="img/parakh.jpg">
-                   </div>
-      	   </div><br />
-      	       <div class="card-avatar2">
-                   <div class="waves-effect waves-block waves-light">
-                     <img class=" activator" src="img/parakh.jpg">
-                   </div>
-      	   </div>
-
-</div>
-
-<div class="col-md-2">
+<div class="col-md-2" style="text-align: center;">
     <div class="card-avatar2">
                    <div class="waves-effect waves-block waves-light">
                      <img class=" activator" src="img/parakh.jpg">
@@ -470,7 +446,31 @@
 
 </div>
 
-<div class="col-md-2">
+<div class="col-md-2" style="text-align: center;">
+    <div class="card-avatar2">
+                   <div class="waves-effect waves-block waves-light">
+                     <img class=" activator" src="img/parakh.jpg">
+                   </div>
+      	   </div><br />
+      	       <div class="card-avatar2">
+                   <div class="waves-effect waves-block waves-light">
+                     <img class=" activator" src="img/parakh.jpg">
+                   </div>
+      	   </div><br />
+      	      <div class="card-avatar2">
+                   <div class="waves-effect waves-block waves-light">
+                     <img class=" activator" src="img/parakh.jpg">
+                   </div>
+      	   </div><br />
+      	       <div class="card-avatar2">
+                   <div class="waves-effect waves-block waves-light">
+                     <img class=" activator" src="img/parakh.jpg">
+                   </div>
+      	   </div>
+
+</div>
+
+<div class="col-md-2" style="text-align: center;">
     <div class="card-avatar2">
                    <div class="waves-effect waves-block waves-light">
                      <img class=" activator" src="img/parakh.jpg">
@@ -496,11 +496,6 @@
 
 </div>
 
-
-
-		  	 <div align=center>
-		     <button id="teamBut2" class="red center btn waves-effect waves-teal wow fadeIn" data-wow-><span style="font-size: 20px;color: #eef0de">Back</span></button>         
-		     </div>
 </div>
 
 	 </div>
@@ -558,30 +553,14 @@ $(document).ready(function(){
   })
 
   var $teamBut = $('#teamBut')
-  var $teamBut2 = $('#teamBut2')
-
   $teamBut.on("click", function(){
-  	$('#firstPage').animate({
-  		height: 'toggle'
-  	}, 1000);
   	$('#secondPage').animate({
   		height: 'toggle'
   	}, 1000);
+  	$teamBut.hide();	
+	$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+
   })
-
-
- $teamBut2.on("click", function(){
- 	
-
-  	$('#secondPage').animate({
-  		height: 'toggle'
-  	}, 1000);
-  	$('#firstPage').animate({
-  		height: 'toggle'
-  	}, 1000);
-$("html, body").animate({ scrollTop: $(document).height() }, 1000);
-
- })
 
   $("#owl-ca").owlCarousel({
       autoPlay: 5000, //Set AutoPlay to 3 seconds
