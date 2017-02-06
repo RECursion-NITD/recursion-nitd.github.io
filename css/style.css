@@ -292,6 +292,12 @@ nav a.button-collapse {
     border-radius: 75px;
 }
 
+.card-avatar2 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 55px;
+}
+
 .card-avatar .card-content {
     text-align: center;
 }
