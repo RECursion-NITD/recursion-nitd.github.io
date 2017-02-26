@@ -37,6 +37,45 @@
 <body class="of">
 
 <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .of {overflow: hidden;}
 
 .nav-wrapper li:hover { background-color:#4fc3f7; }
@@ -121,7 +160,7 @@
                        <ul class="right hide-on-med-and-down">
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#home" style="color: #fffde7" >Home</a></li>
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#event" style="color: #fffde7">Events</a></li>
-                           <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#" style="color: #fffde7">Get Started</a></li> -->
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="GetStarted.html" target="_blank" style="color: #fffde7">Get Started</a></li>
                            <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#gallery" style="color: #fffde7">Gallery</a></li> -->
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#about" style="color: #fffde7">About us</a></li>
                            <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#team" style="color: #fffde7">Contact</a></li>
@@ -133,6 +172,7 @@
                          <!-- <li><a href="#gallery">Gallery</a></li> -->
                          <li><a href="#about">About us</a></li>
                          <li><a href="#team">Contact</a></li>
+                         <li> <a href="GetStarted.html" target="_blank"> Get Started</a></li>
                        </ul>
                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
                    </div>

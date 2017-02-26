@@ -24,7 +24,10 @@ h6 {
 .topnav {
     font-size: 14px;
 }
-
+.div-with-bg
+{
+    background: color url(../img/15.jpg) ;
+}
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -40,7 +43,16 @@ h6 {
     background-size: cover;
 }
 
+.get-started{
 
+     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/14.jpg) no-repeat center center;
+    opacity: 0.7;
+    background-size: cover;
+}
 .intro-message {
     position: relative;
     padding-top: 10%;
@@ -54,10 +66,29 @@ h6 {
     color: #80cbc4;
     letter-spacing: 10px;
 }
+.get-message > h1 {
+    margin: 0;
+    text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72;
+    font-size: 10em;
+    color: #c17d66;
+    letter-spacing: 10px;
+}
+.get-message > p{
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    color: #111111;
+    font-size: 2em;
+}
 
 .intro-divider {
+    width: 1000px;
+    border-top: 10px solid #f8f8f8;
+    border-bottom: 10px solid rgba(0,0,0,0.2);
+}
+.get-divider {
     width: 500px;
-    border-top: 1px solid #f8f8f8;
+    border-top: 1px solid #a50d0d;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
