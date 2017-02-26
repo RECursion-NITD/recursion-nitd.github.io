@@ -1,12 +1,13 @@
 
 <html>
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#2196F3">
     <title>Get Started</title>
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='shortcut icon' type='image/x-icon' href='img/rec.png'/>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
     <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
     <link href="css/landing-page.css" rel="stylesheet">
@@ -19,14 +20,45 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-
-
 </head>
 
 
 
 <body>
+
+
+
+
+<div id="myWS" class="wow fadeIn" >
+<!--   NAVBAR  -->
+
+        <div class="navbar-fixed">
+           <nav id="nav_f" class="blue-grey darken-2" role="navigation">
+               <div class="container">
+                   <div class="nav-wrapper">
+                   <a href="#" id="logo-container" class="brand-logo wow pulse" data-wow-duration="1s" data-wow-iteration="infinite" style="text-decoration: none;">RECursion</a>
+                       <ul class="right hide-on-med-and-down">
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#home" style="color: #fffde7" >Home</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#event" style="color: #fffde7">Events</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="getstarted.html" target="_blank" style="color: #fffde7">Get Started</a></li>
+                           <!-- <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#gallery" style="color: #fffde7">Gallery</a></li> -->
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#about" style="color: #fffde7">About us</a></li>
+                           <li class="waves-effect waves-light wow fadeIn" data-wow-delay="1s"><a href="#team" style="color: #fffde7">Contact</a></li>
+                       </ul>
+                       <ul id="nav-mobile" class="side-nav">
+                         <li class="active"><a href="#">Home</a></li>
+                         <li><a href="#event">Events</a></li>
+                         <!-- <li><a href="">Getting Started</a></li> -->
+                         <!-- <li><a href="#gallery">Gallery</a></li> -->
+                         <li><a href="#about">About us</a></li>
+                         <li><a href="#team">Contact</a></li>
+                         <li> <a href="getstarted.html" target="_blank"> Get Started</a></li>
+                       </ul>
+                   <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                   </div>
+               </div>
+           </nav>
+         </div>
 
  <div class="get-started scrollspy wow slideInUp" id="home" >
     <div class="container">
@@ -52,16 +84,13 @@
             </blockquote></p></div>
           <h2 class ="wow fadeInUp">So how to get started?</h2>
          </div>
-         <div class="container2">
+    <div class="container2">
            
             <h3>Learn a programming language</h3>
             <p class="wow fadeIn" data-wow-duration="4s">
            Any programming language will do. But most problems are set with C/C++ and Java programmers in mind, so knowing any one of them will be really helpful.
-
 You don't need to know really advanced concepts, like classes or generics/templates. You should just know if/else, loops, arrays, functions and have some familiarity with the standard library, like math functions, string/array operations and input/output.
-If you know only C, you can easily start. But at some point of time (especially when you reach advanced stages), you'll need features which most languages have but C does not. Learning C++ is very easy if you know C. I'll suggest that you start out with C and learn C++ in parallel with competitive programming.
-
-Even if you are not confident of your skills in a programming language, you can (and should) still start. Competitive programming is also a good way to practice a new language you have learned.
+If you know only C, you can easily start. But at some point of time (especially when you reach advanced stages), you'll need features which most languages have but C does not. Learning C++ is very easy if you know C. I'll suggest that you start out with C and learn C++ in parallel with competitive programming.Even if you are not confident of your skills in a programming language, you can (and should) still start. Competitive programming is also a good way to practice a new language you have learned.
            </p><br>
              <h2 class ="wow fadeInUp">Making the first step</h2>
             <p class="wow fadeIn" data-wow-duration="4s">
@@ -303,12 +332,22 @@ For more refer here: <br>
 <a href="https://www.youtube.com/user/tusharroy2525" target="_blank"> tusharroy <img src="img/youtube.jpg" style="width:23px;height:23px;"> </a> <br>
 <a href="https://www.youtube.com/user/mycodeschool" target="_blank"> mycodeschool <img src="img/youtube.jpg" style="width:23px;height:23px;"> </a><br>
 <a href="https://www.youtube.com/user/saurabhschool" target="_blank"> saurabhschool <img src="img/youtube.jpg" style="width:23px;height:23px;"> </a><br>
-          </div>
+    
+   </div>
 
 
-     </div>
+<!-- FOOTER  -->
 
+  <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+          <span style="font-size: 16px; color: #e3f2fd;letter-spacing: 1px;" class="wow bounceInUp" data-wow-delay="1.5s" >Designed by RECursion | 2016</span>
+          <span style="float:right;">
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUvgWjyhptIah864yRGaULSjqFVcb10yAtXCcHduVsKtGXOA/formResponse" class="waves-effect waves-light btn wow bounceInUp" target="_blank" data-wow-delay="1.5s">Feedback</a>
+          </span>
+        </div>
+    </footer>
+    </div>
+    </div>
 
-</div>
 </body>
 </html>
